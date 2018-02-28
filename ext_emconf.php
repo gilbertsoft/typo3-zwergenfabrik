@@ -28,12 +28,12 @@ $EM_CONF[$_EXTKEY] = [
             'Gilbertsoft\\Zwergenfabrik\\' => 'Classes'
         ],
     ],
-    'state' => 'alpha',
+    'state' => 'stable',
     'uploadfolder' => 0,
     'createDirs' => '',
     'clearCacheOnLoad' => 1,
     'author' => 'Simon Gilli',
     'author_email' => 'typo3@gilbertsoft.org',
     'author_company' => 'Gilbertsoft',
-    'version' => '0.0.1',
+    'version' => '1.0.0',
 ];
