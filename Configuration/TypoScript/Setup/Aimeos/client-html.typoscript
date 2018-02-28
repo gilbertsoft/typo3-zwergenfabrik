@@ -1,0 +1,213 @@
+plugin.tx_aimeos.settings {
+
+  #client.html.catalog.detail.standard.subparts {
+  #  0 = image
+  #  1 = basic
+  #  2 = basket
+  #  3 = actions
+  #  4 = social
+  #  5 = bundle
+  #  6 = additional
+  #  7 = suggest
+  #  8 = bought
+  #  9 = seen
+  #}
+
+  client.html.catalog.filter.attribute.types {
+    #100 = caption
+    #101 = chain-motif
+    #102 = chain-color
+    #103 = chain-caption
+    #104 = rattle-motif
+    #105 = rattle-color
+    #106 = rattle-caption
+    #107 = tag-motif
+    #108 = tag-color
+    #109 = bottle-type
+    #110 = bottle-color
+    #111 = bottle-design
+    #112 = box-type
+    #113 = box-color
+    #114 = box-design
+    #115 = box-motif
+    #116 = body-type
+    #117 = body-size
+    #118 = body-color
+    #119 = body-font-color
+    #120 = body-motif
+    #121 = body-caption
+    #122 = body-date
+    #123 = body-time
+    #124 = body-weight
+    #125 = body-length
+    #126 = bib-color
+    #127 = bib-motif
+    #128 = bib-font-color
+    #129 = bib-caption
+    #130 = cap-color
+    #131 = cap-motif
+    #132 = cap-font-color
+    #133 = cap-caption
+    134 = gender
+    #135 = font
+    #136 = clip
+    #137 = clip-material
+    #138 = letters
+    139 = letters-material
+    #140 = mam
+    141 = mam-option
+    #142 = bell
+    143 = bell-option
+    #144 = gift-wrapping
+    145 = gift-wrapping-option
+    #146 = mullwindel
+    147 = mullwindel-option
+    #148 = body-star-sign
+    149 = perl-color
+    150 = material
+    151 = caption-option
+    #152 = remarks
+  }
+  client.html.checkout.standard.address.countries {
+    0 = CH
+    #1 = DE
+    #2 = AT
+  }
+  client.html.checkout.standard.address.billing.mandatory {
+    0 = order.base.address.salutation
+    1 = order.base.address.firstname
+    2 = order.base.address.lastname
+    3 = order.base.address.address1
+    4 = order.base.address.postal
+    5 = order.base.address.city
+    #6 = order.base.address.languageid
+    6 = order.base.address.email
+    #7 = order.base.address.countryid
+  }
+  client.html.checkout.standard.address.billing.optional {
+    0 = order.base.address.company
+    1 = order.base.address.vatid
+    2 = order.base.address.address2
+    3 = order.base.address.address3
+    4 = order.base.address.state
+    5 = order.base.address.languageid
+    6 = order.base.address.countryid
+    7 = order.base.address.telephone
+    8 = order.base.address.telefax
+    9 = order.base.address.website
+  }
+  client.html.checkout.standard.address.delivery.mandatory < client.html.checkout.standard.address.billing.mandatory
+  client.html.checkout.standard.address.delivery.optional < client.html.checkout.standard.address.billing.optional
+
+  client.html.checkout.standard.process.account.standard.groupids {
+    0 = 1
+  }
+
+  client.html.catalog.attribute.type {
+    #[code] = [select/radio]
+    #bottle-motive = radio
+    #box-motive = radio
+    #body-type = radio
+    #body-size = radio
+    #body-color = radio
+    #body-font-color = radio
+    #body-motive = radio
+    #bib-color = radio
+    #bib-motive = radio
+    #bib-font-color = radio
+    #cap-color = radio
+    #cap-motive = radio
+    #cap-font-color = radio
+    #clip = radio
+    #letters = radio
+    #mam = radio
+    #bell = radio
+    #gift-wrapping = radio
+    #mullwindel = radio
+    #body-star-sign
+  }
+
+  client.html.catalog.attribute.preselect {
+    #[code] = [true/false]
+    #caption = false
+    chain-motif = true
+    chain-color = true
+    #chain-caption = false
+    rattle-motif = true
+    rattle-color = true
+    #rattle-caption = false
+    tag-motif = true
+    tag-color = true
+    #bottle-type = false
+    bottle-color = true
+    bottle-design = true
+    #box-type = false
+    box-color = true
+    box-design = true
+    box-motif = true
+    body-type = true
+    body-size = true
+    body-color = true
+    body-font-color = true
+    body-motif = true
+    #body-caption = false
+    #body-date = false
+    #body-time = false
+    #body-weight = false
+    #body-length = false
+    bib-color = true
+    #bib-motif = false
+    bib-font-color = true
+    #bib-caption = false
+    cap-color = true
+    #cap-motif = false
+    cap-font-color = true
+    #cap-caption = false
+    #gender = false
+    font = true
+    clip = true
+    #clip-material = false
+    letters = true
+    #letters-material = false
+    #mam = false
+    #mam-option = false
+    #bell = false
+    #bell-option = false
+    #gift-wrapping = false
+    #gift-wrapping-option = false
+    #mullwindel = false
+    #mullwindel-option = false
+    #body-star-sign = false
+    #perl-color = false
+    #material = false
+    #caption-option = false
+    #remarks = false
+  }
+
+  client.html.catalog.selection.type {
+    #[code] = [select/radio]
+    chain-color = select
+    bottle-color = radio
+    box-color = radio
+    body-color = select
+    font = radio
+    tag-color = select
+
+    color = radio
+    length = radio
+    width = radio
+  }
+
+  client.html.catalog.selection.preselect {
+    #[code] = [true/false]
+    #chain-color = true
+    #bottle-color = true
+    #box-color = true
+    #body-color = true
+    #font = true
+  }
+
+
+  client.html.catalog.detail.partials.image = catalog/detail/image-partial-bottom.php
+
+}

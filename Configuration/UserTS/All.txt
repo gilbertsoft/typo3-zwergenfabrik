@@ -1,0 +1,5 @@
+#
+# UserTS for Zwergenfabrik
+#
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:zwergenfabrik/Configuration/UserTS/Admin.txt" condition="[adminUser = 1]">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:zwergenfabrik/Configuration/UserTS/Options.txt">

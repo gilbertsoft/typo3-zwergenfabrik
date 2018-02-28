@@ -1,0 +1,44 @@
+#############
+#### RTE ####
+#############
+RTE {
+    config {
+        tt_content {
+            bodytext {
+                types {
+                    text {
+                        preset = zwergenfabrik
+                    }
+                    textcolumn {
+                        preset = zwergenfabrik
+                    }
+                    texticon {
+                        preset = zwergenfabrik
+                    }
+                    textmedia {
+                        preset = zwergenfabrik
+                    }
+                    textpic {
+                        preset = zwergenfabrik
+                    }
+                    textteaser {
+                        preset = zwergenfabrik
+                    }
+                    panel {
+                        preset = zwergenfabrik
+                    }
+                }
+            }
+        }
+        tx_bootstrappackage_accordion_item {
+            bodytext {
+                preset = zwergenfabrik
+            }
+        }
+        tx_bootstrappackage_tab_item {
+            bodytext {
+                preset = zwergenfabrik
+            }
+        }
+    }
+}

@@ -1,0 +1,12 @@
+{
+    "projectName": "Aimeos zwergenfabrik extension",
+    "deployDir": "deploy",
+    "licenseText": "",
+    "pkgs": [{
+        "name": "Aimeos zwergenfabrik",
+        "file": "js/aimeos-zwergenfabrik.js",
+        "isDebug": true,
+        "fileIncludes": []
+    }],
+    "resources" : []
+}

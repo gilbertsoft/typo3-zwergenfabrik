@@ -1,0 +1,62 @@
+<INCLUDE_TYPOSCRIPT: source="DIR:EXT:zwergenfabrik/Configuration/TypoScript/Setup/Aimeos" extensions="typoscript">
+
+# Remove smoothscroll code in boostrap_package so changing images in detail view works
+page.includeJSFooterlibs.bootstrap_smoothscroll >
+
+#plugin.tx_aimeos.settings.controller.common.media.standard {
+#  files {
+#    maxheight = 300
+#    maxwidth = 300
+#  }
+#  preview {
+#    maxheight = 320
+#    maxwidth = 240
+#  }
+#}
+
+
+# from aimeos_dist/Configuration/TypoScript/constants.txt
+#plugin.tx_aimeos.settings.client.html.basket.standard.url.target = {$tx_aimeos.basket.target}
+plugin.tx_aimeos.settings.mshop.customer.manager.typo3.pid-default = 2
+plugin.tx_aimeos.settings.mshop.price.taxflag = 0
+
+
+
+#compatibility
+#plugin.tx_aimeos.settings.client.html.catalog.lists.catid-default = {$plugin.tx_aimeos.catalog.lists.catid-default}
+#plugin.tx_aimeos.settings.client.html.common.content.baseurl = {$plugin.tx_aimeos.common.content.baseurl}
+#module.tx_aimeos.settings.client.html.common.content.baseurl = {$module.tx_aimeos.common.content.baseurl}
+#page.includeCSS.aimeos-theme-common = {$plugin.tx_aimeos.theme.css.custom-common}
+#page.includeCSS.aimeos-theme = {$plugin.tx_aimeos.theme.css.custom}
+#page.10.dataProcessing.40.special.value = 0
+#popup.10.dataProcessing.40.special.value = 0
+
+
+lib.navigation.basket = COA
+lib.navigation.basket.10 = USER
+lib.navigation.basket.10 {
+    userFunc = TYPO3\CMS\Extbase\Core\Bootstrap->run
+    vendorName = Aimeos
+    extensionName = Aimeos
+    pluginName = basket-small
+    controller = Basket
+    action = small
+    settings =< plugin.tx_aimeos.settings
+}
+
+page.cssInline {
+    10 = TEXT
+    10.value = .basket-mini {float:right;}
+}
+
+lib.navigation.main.10.1.renderObj < lib.navigation.basket
+lib.language >
+
+
+####################
+#### REMOVE CSS ####
+####################
+page.includeCSS.aimeos >
+page.includeCSS.aimeos-custom >
+page.includeCSS.aimeos-theme-common >
+page.includeCSS.aimeos-theme >

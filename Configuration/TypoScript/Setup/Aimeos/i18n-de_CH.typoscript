@@ -1,0 +1,340 @@
+plugin.tx_aimeos.settings.i18n.de_CH {
+  1 {
+    domain = client/language
+    string = de_CH
+    trans = Deutsch
+  }
+  20 {
+    domain = client
+    string = Attributes
+    trans = Filter
+  }
+  21 {
+    domain = client
+    string = All orders are subject to our terms and conditions.
+    trans (
+Alle Bestellungen erfolgen gemäss unseren <a href="https://www.zwergenfabrik.ch/agb/">AGB</a>, die Sie bei der Auftragserteilung akzeptiert haben.
+
+Bei Bestellungen auf Vorauskasse überweisen Sie uns bitte den ausgewiesenen Betrag innerhalb 7 Tagen auf unser <a href="https://www.zwergenfabrik.ch/bankverbindung/">Konto</a>. Bei Postschalterzahlungen ist ein Zuschlag von CHF 2.00 miteinzuberechnen.
+
+<h4>Begünstigter:</h4>
+Zwergenfabrik Rahel Spörri
+Dorfstrasse 34B
+5430 Wettingen
+
+IBAN: CH13 8074 0000 0082 4943 4
+
+<h4>Bank:</h4>
+Raiffeisenbank Lägern-Baregg Genossenschaft
+St. Bernhardstrasse 4
+5430 Wettingen
+
+BC-Nr: 80740
+PC-Konto: 50-2572-8
+BIC: RAIFCH22740
+    )
+  }
+  30 {
+    domain = client/html
+    string = %1$d Artikel
+    trans {
+      0 = %1$d
+      1 = %1$d
+    }
+  }
+  101 {
+    domain = client/code
+    string = caption
+    trans = Name / Wunschdruck
+  }
+  102 {
+    domain = client/code
+    string = chain-motif
+    trans = Motiv Kette
+  }
+  103 {
+    domain = client/code
+    string = chain-color
+    trans = Farbe Kette
+  }
+  104 {
+    domain = client/code
+    string = ch-caption
+    trans = Name
+  }
+  1004 {
+    domain = client/code
+    string = ch-caption-hint
+    trans = maximal 9 Buchstaben
+  }
+  105 {
+    domain = client/code
+    string = rattle-motif
+    trans = Motiv Rasseli
+  }
+  106 {
+    domain = client/code
+    string = rattle-color
+    trans = Farbe Rasseli
+  }
+  107 {
+    domain = client/code
+    string = ra-caption
+    trans = Name
+  }
+  108 {
+    domain = client/code
+    string = tag-motif
+    trans = Motiv Anhänger
+  }
+  109 {
+    domain = client/code
+    string = tag-color
+    trans = Farbe Anhänger
+  }
+  110 {
+    domain = client/code
+    string = bottle-type
+    trans = Art Flasche
+  }
+  111 {
+    domain = client/code
+    string = bottle-color
+    trans = Farbe Flasche
+  }
+  112 {
+    domain = client/code
+    string = bottle-design
+    trans = Design Flasche
+  }
+  113 {
+    domain = client/code
+    string = box-type
+    trans = Art Znünibox
+  }
+  114 {
+    domain = client/code
+    string = box-color
+    trans = Farbe Znünibox
+  }
+  115 {
+    domain = client/code
+    string = box-design
+    trans = Design Znünibox
+  }
+  1015 {
+    domain = client/code
+    string = box-design-hint
+    trans = kleine Motive neben Hauptmotiv
+  }
+  116 {
+    domain = client/code
+    string = box-motif
+    trans = Motiv Znünibox
+  }
+  1016 {
+    domain = client/code
+    string = box-motif-hint
+    trans = Hauptmotiv
+  }
+  117 {
+    domain = client/code
+    string = body-type
+    trans = Art
+  }
+  118 {
+    domain = client/code
+    string = body-size
+    trans = Grösse
+  }
+  119 {
+    domain = client/code
+    string = body-color
+    trans = Farbe Body
+  }
+  120 {
+    domain = client/code
+    string = body-font-color
+    trans = Schriftfarbe
+  }
+  121 {
+    domain = client/code
+    string = body-motif
+    trans = Motiv
+  }
+  122 {
+    domain = client/code
+    string = bd-caption
+    trans = Name
+  }
+  123 {
+    domain = client/code
+    string = bd-d
+    trans = Geburtsdatum
+  }
+  124 {
+    domain = client/code
+    string = bd-t
+    trans = Geburtszeit
+  }
+  125 {
+    domain = client/code
+    string = bd-w
+    trans = Geburtsgewicht
+  }
+  126 {
+    domain = client/code
+    string = bd-l
+    trans = Geburtslänge
+  }
+  127 {
+    domain = client/code
+    string = bib-color
+    trans = Farbe Lätzli
+  }
+  128 {
+    domain = client/code
+    string = bib-motif
+    trans = Motiv
+  }
+  129 {
+    domain = client/code
+    string = bib-font-color
+    trans = Schriftfarbe
+  }
+  130 {
+    domain = client/code
+    string = bi-caption
+    trans = Name / Wunschdruck
+  }
+  131 {
+    domain = client/code
+    string = cap-color
+    trans = Farbe Mütze
+  }
+  132 {
+    domain = client/code
+    string = cap-motif
+    trans = Motiv
+  }
+  133 {
+    domain = client/code
+    string = cap-font-color
+    trans = Schriftfarbe
+  }
+  134 {
+    domain = client/code
+    string = ca-caption
+    trans = Name / Wunschdruck
+  }
+  135 {
+    domain = client/code
+    string = gender
+    trans = Geschlecht
+  }
+  136 {
+    domain = client/code
+    string = font
+    trans = Schriftart
+  }
+  137 {
+    domain = client/code
+    string = clip
+    trans = Clip
+  }
+  138 {
+    domain = client/code
+    string = clip-material
+    trans = Material Clip
+  }
+  139 {
+    domain = client/code
+    string = letters
+    trans = Buchstaben
+  }
+  140 {
+    domain = client/code
+    string = letters-material
+    trans = Material Buchstaben
+  }
+  141 {
+    domain = client/code
+    string = mam
+    trans = Optionen für MAM-Nuggi
+  }
+  142 {
+    domain = client/code
+    string = mam-option
+    trans = Optionen für MAM-Nuggi
+  }
+  143 {
+    domain = client/code
+    string = bell
+    trans = Glöggli
+  }
+  144 {
+    domain = client/code
+    string = bell-option
+    trans = Glöggli
+  }
+  145 {
+    domain = client/code
+    string = gift-wrapping
+    trans = Geschenkverpackung
+  }
+  1045 {
+    domain = client/code
+    string = gift-wrapping-hint
+    trans = mittel für Kette / gross für Kette und Nuschi bzw. Set
+  }
+  146 {
+    domain = client/code
+    string = gift-wrapping-option
+    trans = Geschenkverpackung
+  }
+  147 {
+    domain = client/code
+    string = mullwindel
+    trans = Nuschi
+  }
+  1047 {
+    domain = client/code
+    string = mullwindel-hint
+    trans = farblich passend mit Motiv ohne Name
+  }
+  148 {
+    domain = client/code
+    string = mullwindel-option
+    trans = Nuschi
+  }
+  149 {
+    domain = client/code
+    string = body-star-sign
+    trans = Sternzeichen
+  }
+  150 {
+    domain = client/code
+    string = perl-color
+    trans = Farbe Perlen
+  }
+  151 {
+    domain = client/code
+    string = material
+    trans = Material
+  }
+  152 {
+    domain = client/code
+    string = caption-option
+    trans = Name / Wunschdruck
+  }
+  153 {
+    domain = client/code
+    string = remarks
+    trans = Bemerkungen
+  }
+  1053 {
+    domain = client/code
+    string = remarks-hint
+    trans = Spezialwünsche
+  }
+}

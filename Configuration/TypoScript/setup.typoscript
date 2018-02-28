@@ -1,0 +1,78 @@
+######################
+#### DEPENDENCIES ####
+######################
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:gsfavicon/Configuration/TypoScript/setup.typoscript">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:aimeos/Configuration/TypoScript/setup.txt">
+
+<INCLUDE_TYPOSCRIPT: source="DIR:EXT:zwergenfabrik/Configuration/TypoScript/Setup" extensions="typoscript">
+
+
+##############
+#### PAGE ####
+##############
+page {
+    includeCSSLibs {
+        #googlewebfont >
+        #googlewebfont = https://fonts.googleapis.com/css?family=Love+Ya+Like+A+Sister|Open+Sans:400,700
+        googlewebfont = https://fonts.googleapis.com/css?family=Love+Ya+Like+A+Sister|Pangolin
+    }
+
+    includeCSS {
+        theme = EXT:zwergenfabrik/Resources/Public/Less/theme.less
+        #aimeos = EXT:zwergenfabrik/Resources/Public/Css/Aimeos/aimeos.css
+        #aimeos-common = EXT:zwergenfabrik/Resources/Public/Css/Aimeos/email.css
+    }
+
+    includeJSLibs {
+
+    }
+
+    includeJS {
+
+    }
+
+    includeJSFooterlibs {
+
+    }
+
+    includeJSFooter {
+        #zwergenfabrik_scripts = EXT:zwergenfabrik/Resources/Public/JavaScript/Dist/scripts.js
+    }
+}
+
+#config.debug = 1
+#config.spamProtectEmailAddresses = ascii
+config.spamProtectEmailAddresses = -1
+config.spamProtectEmailAddresses_atSubst = (at)
+config.spamProtectEmailAddresses_lastDotSubst = (dot)
+#config.additionalHeaders = Content-Security-Policy: default-src 'self'; img-src 'self' data:; style-src 'self' 'unsafe-inline'
+
+config.language = de
+config.locale_all = de_CH.UTF-8
+config.htmlTag_setParams = lang="de" dir="ltr" class="no-js"
+
+# Workaround for TYPO3 performance problem (https://forge.typo3.org/issues/75127)
+config.compressJs = 0
+config.compressCss = 0
+config.concatenateJs = 0
+config.concatenateCss = 0
+
+# from aimeos_dist/Configuration/TypoScript/constants.txt
+config.typolinkLinkAccessRestrictedPages = 11
+config.typolinkLinkAccessRestrictedPages_addParams = &return_url=###RETURN_URL###
+
+#page.shortcutIcon = fileadmin/aimeos_dist/favicon.png
+
+
+#popup.10.dataProcessing.40 >
+#page.10.dataProcessing.40 >
+#page.10.dataProcessing.10.levels = 3
+#page.10.dataProcessing.10.levels = 5
+#page.meta.og:image.stdWrap.cObject.renderObj.10.file.height = 720c #bugfix bootstrap
+
+#page.9 < lib.pagehits
+
+#pagehits = COA
+#pagehits.10 < lib.showPagehits
+#pagehits.wrap = <h2>\|</h2>
+#page.8 < pagehits

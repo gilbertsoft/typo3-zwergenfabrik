@@ -1,0 +1,26 @@
+{
+	"name": "gilbertsoft/typo3-zwergenfabrik",
+	"description": "Sitepackage Zwergenfabrik - Aimeos based Webshop",
+	"version": "0.0.1",
+	"type": "typo3-cms-extension",
+	"keywords": ["TYPO3 CMS"],
+	"homepage": "https://gilbertsoft.com",
+	"license": "GPL-3.0-or-later",
+	"require": {
+		"typo3/cms": "^8.7",
+		"helhum/typo3-console": "^4.4",
+		"gilbertsoft/gswarranty": "*",
+		"gilbertsoft/gscacheconfig": "*",
+		"gilbertsoft/gsprotectedconfig": "*",
+		"gilbertsoft/gsfavicon": "*",
+		"dmitryd/typo3-realurl": "^2.3.1",
+		"bk2k/bootstrap-package": "^9.1.0",
+		"sjbr/static-info-tables": "^6.5.1",
+		"typo3-ter/easy-googlemap": "^2.0.0",
+		"aimeos/aimeos-typo3": "^2018.01"
+	},
+	"replace": {
+		"gszwergenfabrik": "self.version",
+		"typo3-ter/gszwergenfabrik": "self.version"
+	}
+}
