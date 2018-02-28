@@ -1,5 +1,8 @@
 # Change Log
 
+## [v1.0.0](https://github.com/gilbertsoft/typo3-zwergenfabrik/tree/v1.0.0) (2018-02-28)
+[Full Changelog](https://github.com/gilbertsoft/typo3-zwergenfabrik/compare/v0.0.1...v1.0.0)
+
 ## [v0.0.1](https://github.com/gilbertsoft/typo3-zwergenfabrik/tree/v0.0.1) (2018-02-28)
 
 
