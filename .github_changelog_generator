@@ -1,0 +1,2 @@
+cache_file=./.Build/github-changelog-http-cache
+cache_log=./.Build/github-changelog-logger.log
