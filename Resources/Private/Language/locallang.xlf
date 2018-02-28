@@ -3,7 +3,7 @@
     <file source-language="en" datatype="plaintext" original="messages" date="2015-06-23T11:36:30Z">
         <header>
             <authorName>Simon Gilli</authorName>
-            <authorEmail>we@gilbertsoft.com</authorEmail>
+            <authorEmail>typo3@gilbertsoft.org</authorEmail>
         </header>
         <body>
             <trans-unit id="backend_layout.example">

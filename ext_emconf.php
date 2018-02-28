@@ -34,6 +34,7 @@ $EM_CONF[$_EXTKEY] = [
     'clearCacheOnLoad' => 1,
     'author' => 'Simon Gilli',
     'author_email' => 'we@gilbertsoft.com',
+    'author_email' => 'typo3@gilbertsoft.org',
     'author_company' => 'Gilbertsoft',
     'version' => '0.0.1',
 ];
