@@ -1,3 +1,3 @@
-== Sitepackage for the project Zwergenfabrik ==
+# Sitepackage for the project Zwergenfabrik
 
-Add some explanation here.
+This is the Sitepackage for zwergenfabrik.ch.
