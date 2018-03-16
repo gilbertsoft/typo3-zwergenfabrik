@@ -6,4 +6,4 @@ imports:
 
 editor:
     config:
-        contentsCss: "EXT:zwergenfabrik/Resources/Public/Css/rte.css"
+        contentsCss: "EXT:gszwergenfabrik/Resources/Public/Css/rte.css"

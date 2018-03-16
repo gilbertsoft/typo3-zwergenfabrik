@@ -4,8 +4,8 @@
 mod {
     web_layout {
         BackendLayouts {
-            zwergenfabrik_example {
-                title = LLL:EXT:zwergenfabrik/Resources/Private/Language/locallang.xlf:backend_layout.example
+            gszwergenfabrik_example {
+                title = LLL:EXT:gszwergenfabrik/Resources/Private/Language/locallang.xlf:backend_layout.example
                 config {
                     backend_layout {
                         colCount = 1
@@ -14,7 +14,7 @@ mod {
                             1 {
                                 columns {
                                     1 {
-                                        name = LLL:EXT:zwergenfabrik/Resources/Private/Language/locallang.xlf:backend_layout.column.normal
+                                        name = LLL:EXT:gszwergenfabrik/Resources/Private/Language/locallang.xlf:backend_layout.column.normal
                                         colPos = 0
                                     }
                                 }
@@ -22,7 +22,7 @@ mod {
                         }
                     }
                 }
-                icon = EXT:zwergenfabrik/Resources/Public/Images/BackendLayouts/example.png
+                icon = EXT:gszwergenfabrik/Resources/Public/Images/BackendLayouts/example.png
             }
         }
     }

@@ -46,9 +46,9 @@ window.cookieconsent.initialise({
     }
 
     includeCSS {
-        theme = EXT:zwergenfabrik/Resources/Public/Less/theme.less
-        #aimeos = EXT:zwergenfabrik/Resources/Public/Css/Aimeos/aimeos.css
-        #aimeos-common = EXT:zwergenfabrik/Resources/Public/Css/Aimeos/email.css
+        theme = EXT:gszwergenfabrik/Resources/Public/Less/theme.less
+        #aimeos = EXT:gszwergenfabrik/Resources/Public/Css/Aimeos/aimeos.css
+        #aimeos-common = EXT:gszwergenfabrik/Resources/Public/Css/Aimeos/email.css
     }
 
     includeJSLibs {

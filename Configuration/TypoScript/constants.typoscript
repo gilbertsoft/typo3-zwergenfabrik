@@ -17,7 +17,7 @@ styles.content.loginform.pid = 2
 ############
 page {
     logo {
-        file = EXT:zwergenfabrik/Resources/Public/Images/logo.png
+        file = EXT:gszwergenfabrik/Resources/Public/Images/logo.png
         fileInverted = 
         height = 91
         width = 423

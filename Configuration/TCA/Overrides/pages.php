@@ -6,7 +6,7 @@ call_user_func(function()
     /**
      * Temporary variables
      */
-    $extensionKey = 'zwergenfabrik';
+    $extensionKey = 'gszwergenfabrik';
 
     /**
      * Default PageTS for Zwergenfabrik
@@ -14,6 +14,6 @@ call_user_func(function()
     \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::registerPageTSConfigFile(
         $extensionKey,
         'Configuration/PageTS/All.txt',
-        'Zwergenfabrik 2018'
+        'Zwergenfabrik'
     );
 });

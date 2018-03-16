@@ -1,11 +1,11 @@
 {
   "name": "zwergenfabrik",
-  "description": "Template 2018 für Zwergenfabrik",
+  "description": "Sitepackage Zwergenfabrik",
   "repository": {
     "type": "git",
     "url": "https://github.com/gilbertsoft/typo3-zwergenfabrik"
   },
-  "homepage": "https://gilbertsoft.com",
+  "homepage": "https://gilbertsoft.org",
   "author": "Simon Gilli",
   "version": "1.0.0",
   "license": "GPL-2.0+",

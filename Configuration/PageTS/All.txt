@@ -1,8 +1,8 @@
 #
 # PageTS for Zwergenfabrik
 #
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:zwergenfabrik/Configuration/PageTS/RTE.txt">
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:zwergenfabrik/Configuration/PageTS/TCEFORM.txt">
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:zwergenfabrik/Configuration/PageTS/TCEMAIN.txt">
-<INCLUDE_TYPOSCRIPT: source="DIR:EXT:zwergenfabrik/Configuration/PageTS/Mod" extensions="txt">
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:zwergenfabrik/Configuration/PageTS/Mod/WebLayout/BackendLayouts.txt">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:gszwergenfabrik/Configuration/PageTS/RTE.txt">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:gszwergenfabrik/Configuration/PageTS/TCEFORM.txt">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:gszwergenfabrik/Configuration/PageTS/TCEMAIN.txt">
+<INCLUDE_TYPOSCRIPT: source="DIR:EXT:gszwergenfabrik/Configuration/PageTS/Mod" extensions="txt">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:gszwergenfabrik/Configuration/PageTS/Mod/WebLayout/BackendLayouts.txt">
