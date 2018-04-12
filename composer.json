@@ -7,7 +7,6 @@
 	"license": "GPL-3.0-or-later",
 	"require": {
 		"typo3/cms": "^8.7",
-		"helhum/typo3-console": "^4.4",
 		"gilbertsoft/gswarranty": "*",
 		"gilbertsoft/gscacheconfig": "*",
 		"gilbertsoft/gsprotectedconfig": "*",
