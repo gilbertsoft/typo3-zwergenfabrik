@@ -337,4 +337,14 @@ BIC: RAIFCH22740
     string = remarks-hint
     trans = Spezialwünsche
   }
+  154 {
+    domain = client/code
+    string = design
+    trans = Design
+  }
+  155 {
+    domain = client/code
+    string = deckel-color
+    trans = Farbe Deckel
+  }
 }
