@@ -15,7 +15,7 @@
 		"bk2k/bootstrap-package": "^9.1.0",
 		"sjbr/static-info-tables": "^6.5.1",
 		"typo3-ter/easy-googlemap": "^2.0.0",
-		"aimeos/aimeos-typo3": "^2018.01"
+		"aimeos/aimeos-typo3": "^18.4"
 	},
 	"replace": {
 		"gszwergenfabrik": "self.version",
