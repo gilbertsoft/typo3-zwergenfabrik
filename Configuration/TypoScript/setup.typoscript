@@ -60,7 +60,7 @@ window.cookieconsent.initialise({
     }
 
     includeJSFooterlibs {
-
+        bootstrap_smoothscroll >
     }
 
     includeJSFooter {

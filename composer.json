@@ -10,7 +10,7 @@
 		"gilbertsoft/gswarranty": "*",
 		"gilbertsoft/gscacheconfig": "*",
 		"gilbertsoft/gsprotectedconfig": "*",
-		"gilbertsoft/gsfavicon": "*",
+		"gilbertsoft/gsfavicon": "^3.0.0",
 		"dmitryd/typo3-realurl": "^2.3.1",
 		"bk2k/bootstrap-package": "^9.1.0",
 		"sjbr/static-info-tables": "^6.5.1",

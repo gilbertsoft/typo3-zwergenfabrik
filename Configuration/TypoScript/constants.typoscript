@@ -60,46 +60,46 @@ page {
 ##################
 ### EXTENSIONS ###
 ##################
-gilbertsoft {
+plugin {
     gsfavicon {
-        path = EXT:zwergenfabrik/Resources/Public/Icons
+        path = EXT:gszwergenfabrik/Resources/Public/Icons/
     }
-}
 
-plugin.bootstrap_package {
-#    view {
-#        layoutRootPath = EXT:zwergenfabrik/Resources/Private/Layouts/
-#        partialRootPath = EXT:zwergenfabrik/Resources/Private/Partials/
-#        templateRootPath = EXT:zwergenfabrik/Resources/Private/Templates/
-#    }
-    settings {
-        less {
-            brand-primary = #00883E
-            navbar-default-color = #00883E
-            navbar-default-link-color = #00883E
-            navbar-default-link-active-color = #00883E
-            btn-default-color = #00883E
-#            btn-font-weight = 400
-#            grid-gutter-width = 20px
-            navbar-default-bg = #CCE5A2
-            gray-dark = @brand-primary
-            font-size-h1 = 2em
-            font-size-h2 = 1.75em
-            font-size-h3 = 1.5em
-            font-size-h4 = 1.25em
-            font-size-h5 = 1em
-            font-size-h6 = 0.85em
-#            font-size-h1 = floor((@font-size-base * 1.7))
-#            font-size-h2 = floor((@font-size-base * 1.25))
-            font-family-sans-serif = @font-family-base
-            headings-font-family = @font-family-serif
-#            headings-font-weight = 400
-#            headings-line-height = 1.3
-            #font-family-base = 'Open Sans', sans-serif
-            font-family-base = 'Pangolin', cursive
-            font-family-serif = 'Love Ya Like A Sister', 'Pangolin', cursive
-            footer-bg = @brand-primary
-            footer-link-color = #fff
+    bootstrap_package {
+        #view {
+        #    layoutRootPath = EXT:zwergenfabrik/Resources/Private/Layouts/
+        #    partialRootPath = EXT:zwergenfabrik/Resources/Private/Partials/
+        #    templateRootPath = EXT:zwergenfabrik/Resources/Private/Templates/
+        #}
+        settings {
+            less {
+                brand-primary = #00883E
+                navbar-default-color = #00883E
+                navbar-default-link-color = #00883E
+                navbar-default-link-active-color = #00883E
+                btn-default-color = #00883E
+                #btn-font-weight = 400
+                #grid-gutter-width = 20px
+                navbar-default-bg = #CCE5A2
+                gray-dark = @brand-primary
+                font-size-h1 = 2em
+                font-size-h2 = 1.75em
+                font-size-h3 = 1.5em
+                font-size-h4 = 1.25em
+                font-size-h5 = 1em
+                font-size-h6 = 0.85em
+                #font-size-h1 = floor((@font-size-base * 1.7))
+                #font-size-h2 = floor((@font-size-base * 1.25))
+                font-family-sans-serif = @font-family-base
+                headings-font-family = @font-family-serif
+                #headings-font-weight = 400
+                #headings-line-height = 1.3
+                #font-family-base = 'Open Sans', sans-serif
+                font-family-base = 'Pangolin', cursive
+                font-family-serif = 'Love Ya Like A Sister', 'Pangolin', cursive
+                footer-bg = @brand-primary
+                footer-link-color = #fff
+            }
         }
     }
 }
@@ -121,9 +121,9 @@ plugin.bootstrap_package {
 ### REMOVE BOOTSTRAP LESS CONSTANTS ###
 #######################################
 #plugin.bootstrap_package.settings.less >
+plugin.bootstrap_package.settings.less.google-webfont >
+plugin.bootstrap_package.settings.less.google-webfont-weight >
 #plugin.bootstrap_package.settings.overrideLessVariables >
-google-webfont >
-google-webfont-weight >
 
 
 plugin.tx_felogin_pi1.storagePid = 2
