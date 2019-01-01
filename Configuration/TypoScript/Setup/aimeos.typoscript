@@ -19,7 +19,7 @@ page.includeJSFooterlibs.bootstrap_smoothscroll >
 #plugin.tx_aimeos.settings.client.html.basket.standard.url.target = {$tx_aimeos.basket.target}
 plugin.tx_aimeos.settings.controller.frontend.customer.groupids = 1
 plugin.tx_aimeos.settings.mshop.customer.manager.typo3.pid-default = 2
-plugin.tx_aimeos.settings.mshop.price.taxflag = 0
+plugin.tx_aimeos.settings.mshop.price.taxflag = 1
 
 
 
