@@ -64,7 +64,7 @@ window.cookieconsent.initialise({
     }
 
     includeJSFooter {
-        #zwergenfabrik_scripts = EXT:zwergenfabrik/Resources/Public/JavaScript/Dist/scripts.js
+        #zwergenfabrik_scripts = EXT:gszwergenfabrik/Resources/Public/JavaScript/Dist/scripts.js
     }
 }
 

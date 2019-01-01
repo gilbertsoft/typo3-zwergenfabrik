@@ -30,9 +30,9 @@ page {
 #        width = 1169
     }
 #    fluidtemplate {
-#        layoutRootPath = EXT:zwergenfabrik/Resources/Private/Layouts/Page/
-#        partialRootPath = EXT:zwergenfabrik/Resources/Private/Partials/Page/
-#        templateRootPath = EXT:zwergenfabrik/Resources/Private/Templates/Page/
+#        layoutRootPath = EXT:gszwergenfabrik/Resources/Private/Layouts/Page/
+#        partialRootPath = EXT:gszwergenfabrik/Resources/Private/Partials/Page/
+#        templateRootPath = EXT:gszwergenfabrik/Resources/Private/Templates/Page/
 
 #        partialRootPath = EXT:aimeos_dist/Resources/Private/Partials/Page/
 #    }
@@ -73,9 +73,9 @@ plugin {
 
     bootstrap_package {
         #view {
-        #    layoutRootPath = EXT:zwergenfabrik/Resources/Private/Layouts/
-        #    partialRootPath = EXT:zwergenfabrik/Resources/Private/Partials/
-        #    templateRootPath = EXT:zwergenfabrik/Resources/Private/Templates/
+        #    layoutRootPath = EXT:gszwergenfabrik/Resources/Private/Layouts/
+        #    partialRootPath = EXT:gszwergenfabrik/Resources/Private/Partials/
+        #    templateRootPath = EXT:gszwergenfabrik/Resources/Private/Templates/
         #}
         settings {
             less {
@@ -116,9 +116,9 @@ plugin {
 ########################
 #plugin.bootstrap_package_contentelements {
 #    view {
-#        layoutRootPath = EXT:zwergenfabrik/Resources/Private/Layouts/ContentElements/
-#        partialRootPath = EXT:zwergenfabrik/Resources/Private/Partials/ContentElements/
-#        templateRootPath = EXT:zwergenfabrik/Resources/Private/Templates/ContentElements/
+#        layoutRootPath = EXT:gszwergenfabrik/Resources/Private/Layouts/ContentElements/
+#        partialRootPath = EXT:gszwergenfabrik/Resources/Private/Partials/ContentElements/
+#        templateRootPath = EXT:gszwergenfabrik/Resources/Private/Templates/ContentElements/
 #    }
 #}
 

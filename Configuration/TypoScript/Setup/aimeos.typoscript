@@ -1,4 +1,4 @@
-<INCLUDE_TYPOSCRIPT: source="DIR:EXT:zwergenfabrik/Configuration/TypoScript/Setup/Aimeos" extensions="typoscript">
+<INCLUDE_TYPOSCRIPT: source="DIR:EXT:gszwergenfabrik/Configuration/TypoScript/Setup/Aimeos" extensions="typoscript">
 
 # Remove smoothscroll code in boostrap_package so changing images in detail view works
 page.includeJSFooterlibs.bootstrap_smoothscroll >
