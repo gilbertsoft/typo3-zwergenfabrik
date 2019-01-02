@@ -114,6 +114,14 @@ plugin {
                 footer-bg = @brand-primary
                 footer-link-color = #fff
             }
+
+            ################################
+            ### BOOTSTRAP SCSS CONSTANTS ###
+            ################################
+            scss {
+                primary = #00883e
+                secondary = #013859
+            }
         }
     }
 }
