@@ -87,7 +87,7 @@ plugin {
                 #btn-font-weight = 400
                 #grid-gutter-width = 20px
                 navbar-default-bg = #CCE5A2
-                gray-dark = @brand-primary
+                #gray-dark = @brand-primary
                 font-size-h1 = 2em
                 font-size-h2 = 1.75em
                 font-size-h3 = 1.5em
