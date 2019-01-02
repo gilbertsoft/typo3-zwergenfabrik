@@ -4,6 +4,14 @@
 @import "variables";
 
 //
+// Navbar
+//
+.navbar-default {
+    @extend .navbar-light;
+    @extend .bg-secondary;
+}
+
+//
 // Import needed Bootstrap Package Files
 //
 @import "../../../../../bootstrap_package/Resources/Public/Scss/Theme/theme";

@@ -120,7 +120,7 @@ plugin {
             ################################
             scss {
                 primary = #00883e
-                secondary = #013859
+                secondary = #cce5a2
             }
         }
     }
