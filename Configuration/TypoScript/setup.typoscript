@@ -3,6 +3,7 @@
 ######################
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:gsfavicon/Configuration/TypoScript/setup.typoscript">
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:aimeos/Configuration/TypoScript/setup.txt">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:go_maps_ext/Configuration/TypoScript/setup.txt">
 
 <INCLUDE_TYPOSCRIPT: source="DIR:EXT:gszwergenfabrik/Configuration/TypoScript/Setup" extensions="typoscript">
 
