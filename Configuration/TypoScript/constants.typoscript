@@ -143,8 +143,8 @@ plugin {
 ### REMOVE BOOTSTRAP LESS CONSTANTS ###
 #######################################
 #plugin.bootstrap_package.settings.less >
-plugin.bootstrap_package.settings.less.google-webfont >
-plugin.bootstrap_package.settings.less.google-webfont-weight >
+#plugin.bootstrap_package.settings.less.google-webfont >
+#plugin.bootstrap_package.settings.less.google-webfont-weight >
 #plugin.bootstrap_package.settings.overrideLessVariables >
 
 
