@@ -17,7 +17,6 @@ $EM_CONF[$_EXTKEY] = [
             'realurl' => '2.3.0-2.99.99',
             'bootstrap_package' => '9.1.0-9.99.99',
             'static_info_tables' => '6.5.1-6.99.99',
-            'easy_googlemap' => '2.0.0-2.99.99',
             'aimeos' => '18.0.0-18.99.99'
         ],
         'conflicts' => [
