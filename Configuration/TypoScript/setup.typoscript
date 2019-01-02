@@ -18,7 +18,8 @@ page {
     }
 
     includeCSS {
-        theme = EXT:gszwergenfabrik/Resources/Public/Less/theme.less
+        theme = EXT:gszwergenfabrik/Resources/Public/Scss/Theme/theme.scss
+        #theme = EXT:gszwergenfabrik/Resources/Public/Less/theme.less
         #aimeos = EXT:gszwergenfabrik/Resources/Public/Css/Aimeos/aimeos.css
         #aimeos-common = EXT:gszwergenfabrik/Resources/Public/Css/Aimeos/email.css
     }
