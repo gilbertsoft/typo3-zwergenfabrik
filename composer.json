@@ -13,7 +13,6 @@
 		"gilbertsoft/gsfavicon": "^3.0.0",
 		"dmitryd/typo3-realurl": "^2.3.1",
 		"bk2k/bootstrap-package": "^10.0.5",
-		"typo3-ter/easy-googlemap": "^2.0.0",
 		"clickstorm/go_maps_ext": "^2.6.0",
 		"aimeos/aimeos-typo3": "^18.4 || 2018.10.x-dev"
 	},
