@@ -6,7 +6,7 @@
 	"homepage": "https://gilbertsoft.com",
 	"license": "GPL-3.0-or-later",
 	"require": {
-		"typo3/cms": "^8.7",
+		"typo3/cms": "^9.5",
 		"gilbertsoft/gswarranty": "*",
 		"gilbertsoft/gscacheconfig": "*",
 		"gilbertsoft/gsprotectedconfig": "*",
