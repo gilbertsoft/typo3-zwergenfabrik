@@ -10,9 +10,9 @@
 		"gilbertsoft/gswarranty": "*",
 		"gilbertsoft/gscacheconfig": "*",
 		"gilbertsoft/gsprotectedconfig": "*",
-		"gilbertsoft/gsfavicon": "^3.0.0",
-		"bk2k/bootstrap-package": "^10.0.5",
-		"clickstorm/go_maps_ext": "^2.6.0",
+		"gilbertsoft/gsfavicon": "^3.0",
+		"bk2k/bootstrap-package": "^10.0",
+		"clickstorm/go_maps_ext": "^2.6",
 		"aimeos/aimeos-typo3": "^19.4"
 	},
 	"replace": {
