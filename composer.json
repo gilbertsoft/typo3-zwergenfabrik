@@ -6,13 +6,13 @@
 	"homepage": "https://gilbertsoft.com",
 	"license": "GPL-3.0-or-later",
 	"require": {
-		"typo3/cms": "^9.5",
+		"typo3/cms": "*",
 		"gilbertsoft/gswarranty": "*",
 		"gilbertsoft/gscacheconfig": "*",
 		"gilbertsoft/gsprotectedconfig": "*",
-		"gilbertsoft/gsfavicon": "^3.0",
+		"gilbertsoft/gsfavicon": "*",
 		"bk2k/bootstrap-package": "^10.0",
-		"clickstorm/go_maps_ext": "^2.6",
+		"clickstorm/go_maps_ext": "^3.1",
 		"aimeos/aimeos-typo3": "^19.4"
 	},
 	"replace": {
