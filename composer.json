@@ -11,7 +11,7 @@
 		"gilbertsoft/gscacheconfig": "*",
 		"gilbertsoft/gsprotectedconfig": "*",
 		"gilbertsoft/gsfavicon": "*",
-		"bk2k/bootstrap-package": "^10.0",
+		"gilbertsoft/bootstrap-package": "dev-deprecations",
 		"clickstorm/go_maps_ext": "^3.1",
 		"aimeos/aimeos-typo3": "^19.4"
 	},
