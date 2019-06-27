@@ -18,7 +18,7 @@ styles.content.loginform.pid = 2
 page {
     logo {
         file = EXT:gszwergenfabrik/Resources/Public/Images/logo.png
-        fileInverted = 
+        fileInverted = EXT:gszwergenfabrik/Resources/Public/Images/logo-inverted.png
         height = 91
         width = 423
         alt = Logo Zwergenfabrik
@@ -42,6 +42,11 @@ page {
         keywords = Nuggiketten aus Holz und Silikon,Rasseli aus Holz und Silikon,Beissketten aus Holz und Silikon,Kinderwagenketten,Stillketten,Beisssterne aus Silikon,bedruckte Bodies,bedruckte Lätzli,bedruckte Neugeborenenmützen,bedruckte Trinkflaschen,bedruckte Znüniböxli,bedruckte LED-Sterne,Schlüsselanhänger aus Holz und Silikon,Engeli als Schlüsselanhänger/Glücksbringer,Kinderkleidung,Socken,Strumpfhosen,Unterwäsche,Finken,Pyjamas,Schals,Sonnengläser aus Südafrika
         google-site-verification = pxdmx_0qlhR5-nEGEjDjZC3fMdVztybcRoCOqHLg4gQ
     }    
+    preloader {
+        logo.file = EXT:gszwergenfabrik/Resources/Public/Images/logo-inverted.png
+        logo.height = 91
+        logo.width = 431
+    }
     theme {
         cookieconsent.content.href = 64
         cookieconsent.location = 1
