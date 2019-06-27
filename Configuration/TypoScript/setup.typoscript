@@ -11,34 +11,6 @@
 #### PAGE ####
 ##############
 page {
-    headerData {
-        99 = TEXT
-        99.value (
-<link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css" />
-<script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
-<script>
-window.addEventListener("load", function(){
-window.cookieconsent.initialise({
-  "palette": {
-    "popup": {
-      "background": "#00883e",
-      "text": "#bede88"
-    },
-    "button": {
-      "background": "#bede88",
-      "text": "#00883e"
-    }
-  },
-  "theme": "classic",
-  "content": {
-    "message": "Unsere Webseite verwendet für den Bestellvorgang und die Anmeldung Cookies. Es werden aber keinerlei Daten für Werbezwecke verwendet!",
-    "dismiss": "OK",
-    "link": "Mehr über Cookies"
-  }
-})});
-</script>
-        )
-    }
     includeCSSLibs {
         #googlewebfont >
         #googlewebfont = https://fonts.googleapis.com/css?family=Love+Ya+Like+A+Sister|Open+Sans:400,700
