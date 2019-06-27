@@ -14,11 +14,11 @@ $EM_CONF[$_EXTKEY] = [
             'gscacheconfig' => '*',
             'gsprotectedconfig' => '*',
             'gsfavicon' => '*',
-            'bootstrap_package' => '9.1.0-9.99.99',
-            'easy_googlemap' => '2.0.0-2.99.99',
-            'aimeos' => '18.0.0-18.99.99'
             'realurl' => '2.5.0-2.99.99',
+            'bootstrap_package' => '10.0.0-10.99.99',
             'static_info_tables' => '6.7.0-6.99.99',
+            'go_maps_ext' => '2.6.0-2.99.99',
+            'aimeos' => '19.4.0-19.99.99'
         ],
         'conflicts' => [
         ],
