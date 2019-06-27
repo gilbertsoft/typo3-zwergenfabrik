@@ -43,12 +43,14 @@ page {
         google-site-verification = pxdmx_0qlhR5-nEGEjDjZC3fMdVztybcRoCOqHLg4gQ
     }    
     theme {
+        cookieconsent.content.href = 64
+        cookieconsent.location = 1
         copyright.enable = 1
         copyright.text = Copyright © 2016-###CURRENTYEAR### Zwergenfabrik Rahel Spörri. Alle Rechte vorbehalten.
-        breadcrumb = 0
-        navigationtype = top
-        navigationstyle = default
-        metasection.enable = 0
+        breadcrumb.enable = 0
+        navigation.type = top
+        navigation.style = default
+        #metasection.enable = 0
         meta.enable = 0
         meta.navigationValue = 3,64,40
         news.list.maxWInText = 0
