@@ -46,7 +46,7 @@ page {
         cookieconsent.content.href = 64
         cookieconsent.location = 1
         copyright.enable = 1
-        copyright.text = Copyright © 2016-###CURRENTYEAR### Zwergenfabrik Rahel Spörri. Alle Rechte vorbehalten.
+        copyright.text = Copyright © 2016-###CURRENTYEAR### Zwergenfabrik GmbH. Alle Rechte vorbehalten.
         breadcrumb.enable = 0
         navigation.type = top
         navigation.style = default
