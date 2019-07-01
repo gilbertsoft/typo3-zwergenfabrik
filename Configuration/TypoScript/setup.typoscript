@@ -52,10 +52,11 @@ config.locale_all = de_CH.UTF-8
 config.htmlTag_setParams = lang="de" dir="ltr" class="no-js"
 
 # Workaround for TYPO3 performance problem (https://forge.typo3.org/issues/75127)
-config.compressJs = 0
-config.compressCss = 0
-config.concatenateJs = 0
-config.concatenateCss = 0
+# Seems not to be a problem with 8.7
+#config.compressJs = 0
+#config.compressCss = 0
+#config.concatenateJs = 0
+#config.concatenateCss = 0
 
 # from aimeos_dist/Configuration/TypoScript/constants.txt
 config.typolinkLinkAccessRestrictedPages = 11
