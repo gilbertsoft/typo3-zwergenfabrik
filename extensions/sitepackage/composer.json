@@ -1,5 +1,5 @@
 {
-	"name": "gilbertsoft/typo3-zwergenfabrik",
+	"name": "zwergenfabrik/sitepackage",
 	"description": "Sitepackage Zwergenfabrik - Aimeos based Webshop",
 	"type": "typo3-cms-extension",
 	"keywords": ["TYPO3 CMS"],
