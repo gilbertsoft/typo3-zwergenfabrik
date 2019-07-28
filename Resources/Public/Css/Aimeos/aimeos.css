@@ -1525,8 +1525,8 @@ html.no-js .catalog-filter-supplier:hover .supplier-lists {
 .catalog-list-items .selection .media-item > img,
 .catalog-detail-basket .selection .media-item > img {
 	border: none;
-	height: 1.33em;
-	width: 1.33em;
+	height: 100%;
+	width: 100%;
 }
 
 .catalog-list-items .selection .media-item + span,
