@@ -1,0 +1,68 @@
+{
+	"name": "gilbertsoft/zwergenfabrik",
+	"description": "Aimeos Webshop based on TYPO3 CMS and Bootstrap Package for Zwergenfabrik GmbH",
+	"type": "project",
+	"keywords": [
+		"TYPO3 CMS",
+		"Bootstrap Package",
+		"Aimeos Webshop",
+		"Zwergenfabrik GmbH"		
+	],
+	"homepage": "https://www.zwergenfabrik.ch",
+	"readme": "README.md",
+	"license": "GPL-3.0-or-later",
+	"authors": [
+		{
+			"name": "Simon Gilli",
+			"email": "typo3@gilbertsoft.org",
+			"homepage": "https://gilbertsoft.com/typo3"
+		}
+	],
+	"require": {
+		"typo3/minimal": "^8.7",
+		"helhum/typo3-console": "*",
+		"helhum/typo3-secure-web": "*",
+		"gilbertsoft/gswarranty": "*",
+		"gilbertsoft/gscacheconfig": "*",
+		"gilbertsoft/gsprotectedconfig": "*",
+		"gilbertsoft/sitepackage": "@dev"
+	},
+	"require-dev": {
+	},
+	"minimum-stability": "dev",
+	"prefer-stable": true,
+	"repositories": [
+		{ "type": "path", "url": "extensions/*" },
+		{ "type": "composer", "url": "https://composer.typo3.org/" }
+	],
+	"config": {
+		"platform": {
+			"php": "7.2.21"
+		}
+	},
+	"scripts": {
+		"typo3-cms-scripts": [
+			"typo3cms install:fixfolderstructure",
+			"typo3cms install:generatepackagestates",
+			"typo3cms cache:flush --files-only",
+			"typo3cms upgrade:all",
+			"typo3cms language:update",
+			"typo3cms aimeos:setup",
+			"typo3cms cache:flush"
+		],
+		"aimeos-scripts": [
+			"Aimeos\\Aimeos\\Custom\\Composer::install"
+		],
+		"post-autoload-dump": [
+			"@aimeos-scripts",
+			"@typo3-cms-scripts"
+		]
+	},
+	"extra": {
+		"typo3/cms": {
+			"cms-package-dir": "{$vendor-dir}/typo3/cms",
+			"root-dir": "private",
+			"web-dir": "web"
+		}
+	}
+}
