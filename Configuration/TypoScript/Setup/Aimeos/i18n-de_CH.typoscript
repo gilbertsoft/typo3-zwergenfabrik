@@ -348,4 +348,14 @@ BIC: RAIFCH22XXX
     string = deckel-color
     trans = Farbe Deckel
   }
+  156 {
+    domain = client/code
+    string = font-color1
+    trans = Schriftfarbe 1
+  }
+  157 {
+    domain = client/code
+    string = font-color2
+    trans = Schriftfarbe 2
+  }
 }
