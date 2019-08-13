@@ -1,0 +1,38 @@
+{
+	"name": "gilbertsoft/sitepackage",
+	"description": "TYPO3 sitepackage for zwergenfabrik.ch - Aimeos based Webshop",
+	"type": "typo3-cms-extension",
+	"keywords": ["TYPO3 CMS"],
+	"homepage": "https://gilbertsoft.com",
+	"license": "GPL-3.0-or-later",
+	"require": {
+        "typo3/cms-core": "^8.7 || ^9.5",
+        "typo3/cms-rte-ckeditor": "^8.7 || ^9.5",
+		"typo3/cms-filemetadata": "*",
+		"typo3/cms-linkvalidator": "*",
+        "typo3/cms-lowlevel": "*",
+		"typo3/cms-opendocs": "*",
+		"typo3/cms-recycler": "*",
+		"typo3/cms-reports": "*",
+		"typo3/cms-scheduler": "*",
+		"typo3/cms-setup": "*",
+		"typo3/cms-sys-action": "*",
+		"typo3/cms-taskcenter": "*",
+        "typo3/cms-tstemplate": "*",
+		"gilbertsoft/gsfavicon": "*",
+        "bk2k/bootstrap-package": "^10.0",
+		"dmitryd/typo3-realurl": "^2.5",
+		"sjbr/static-info-tables": "^6.7",
+		"clickstorm/go_maps_ext": "^2.6",
+		"aimeos/aimeos-typo3": "^19.4"
+	},
+	"replace": {
+		"gszwergenfabrik": "self.version",
+		"typo3-ter/gszwergenfabrik": "self.version"
+	},
+	"extra": {
+		"typo3/cms": {
+			"extension-key": "gszwergenfabrik"
+		}
+	}
+}
