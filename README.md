@@ -4,9 +4,8 @@ Get going quickly with TYPO3 CMS.
 
 ## Prerequisites
 
-* PHP 7
+* PHP 7.2
 * composer (<https://getcomposer.org/download/>)
-* ISPConfig web folder structure
 
 ## Quickstart
 
@@ -43,6 +42,19 @@ php[used PHP version, e.g. 7.2] vendor/bin/typo3cms install:setup \
     --admin-password=password \
     --site-setup-type=site
 ```
+
+## User manual
+
+### Adding new attributes
+
+* add a attribute in the Aimeos Admin and note the given key
+* add the new key to the TypoScript translation
+  (<https://github.com/gilbertsoft/typo3-zwergenfabrik/blob/master/extensions/sitepackage/Configuration/TypoScript/Setup/Aimeos/i18n-de_CH.typoscript>)
+  at the end of the file by coping the last block and increase it's number by
+  one
+* save changes at github and make a pull request (PR)
+* the PR will be checked and merged by us and deployment will be made to
+  stage and / or production servers afterwards
 
 ## Updates
 
