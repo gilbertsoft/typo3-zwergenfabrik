@@ -3,6 +3,7 @@
 
 /commands/*/*.example
 /commands/*/README.txt
+/commands/db/mysql
 /homeadditions/*.example
 /homeadditions/README.txt
 /import.yaml
