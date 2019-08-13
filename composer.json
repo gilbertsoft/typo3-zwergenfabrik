@@ -57,7 +57,15 @@
 		"post-autoload-dump": [
 			"@aimeos-scripts",
 			"@typo3-cms-scripts"
-		]
+		],
+		"db-backup": ["dbutils backup"],
+		"db-restore": ["dbutils restore"],
+		"db-restore-prod": ["dbutils restore-prod"]
+	},
+    "scripts-descriptions": {
+        "db-backup": "Backup database to ./data/",
+        "db-restore": "Restore database from ./data/",
+        "db-restore-prod": "Restore database from production"
 	},
 	"extra": {
 		"typo3/cms": {
@@ -65,5 +73,6 @@
 			"root-dir": "private",
 			"web-dir": "web"
 		}
-	}
+	},
+	"bin": ["bin/dbutils"]
 }

@@ -1,0 +1,158 @@
+#!/usr/bin/env sh
+#    {one line to give the program's name and a brief idea of what it does.}
+#    Copyright (C) {year}  {name of author}
+#
+#    This program is free software: you can redistribute it and/or modify
+#    it under the terms of the GNU General Public License as published by
+#    the Free Software Foundation, either version 3 of the License, or
+#    (at your option) any later version.
+#
+#    This program is distributed in the hope that it will be useful,
+#    but WITHOUT ANY WARRANTY; without even the implied warranty of
+#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#    GNU General Public License for more details.
+#
+#    You should have received a copy of the GNU General Public License
+#    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+# dbutils: database utilities
+
+print_header()
+{
+    echo "dbutils version 0.0.1  Copyright (C) 2019  Gilbertsoft"
+    echo ""
+    echo "This program comes with ABSOLUTELY NO WARRANTY."
+    echo "This is free software, and you are welcome to redistribute it"
+    echo "under certain conditions."
+    echo ""
+    echo "Type 'dbutils license' for details."
+    echo ""
+}
+
+ensure_ddev()
+{
+    ddev version > /dev/null 2>&1
+
+    if [ "$?" -ne "0" ]; then
+        echo "DDEV can not be executed on this system! Please install or add it to the PATH."
+        exit 1;
+    fi
+}
+
+check_exit_code()
+{
+    if [ "$2" -ne "0" ]; then
+        echo "$1 exited with code $2"
+        exit $2
+    fi
+}
+
+backup_db()
+{
+    # Environment dependant dumping
+    if test -z "$SITE_ENV"; then
+        ensure_ddev
+
+        # Create export
+        echo Exporting data...
+
+        ddev export-db --file=./data/db.sql.gz
+        check_exit_code "ddev" $?
+    else
+        # Create dump
+        echo Dumping data...
+
+        mysqldump --single-transaction -u$DB_USERNAME -p$DB_PASSWORD $DB_NAME | gzip >db.sql.gz
+        check_exit_code "mysqldump" $?
+    fi
+
+    # Copy to new file including date and time
+    cp db.sql.gz db-`date +%Y%m%d%H%M`.sql.gz
+    check_exit_code "cp" $?
+
+    echo Done.
+}
+
+restore_db()
+{
+    # Environment dependant dumping
+    if test -z "$SITE_ENV"; then
+        ensure_ddev
+
+        # Restore data
+        echo Importing data...
+
+        ddev import-db --src=./data/db.sql.gz
+        check_exit_code "ddev" $?
+    else
+        echo "Not implemented for this environment!"
+        exit 1
+    fi
+
+    echo Done.
+}
+
+restore_from_prod()
+{
+    # Test environment
+    test "$SITE_ENV" != "STAGE" && "$SITE_ENV" != "DEV" && echo "Not allowed for this environment" && exit 1
+
+    # Test PROD variables
+    test -z "$DB_HOST_PROD" && echo "DB_HOST_PROD variable missing" && exit 2
+    test -z "$DB_NAME_PROD" && echo "DB_NAME_PROD variable missing" && exit 2
+    test -z "$DB_PASSWORD_PROD" && echo "DB_PASSWORD_PROD variable missing" && exit 2
+    test -z "$DB_USERNAME_PROD" && echo "DB_USERNAME_PROD variable missing" && exit 2
+
+    # Test hosts
+    test "$DB_HOST_PROD" != "$DB_HOST" && echo "different hosts not supported" && exit 3
+
+    # Drop all tables
+    echo Dropping tables...
+    echo "SET FOREIGN_KEY_CHECKS = 0;" > ./drop_all_tables.sql
+    ( mysqldump --add-drop-table --no-data -u$DB_USERNAME -p$DB_PASSWORD $DB_NAME | grep 'DROP TABLE' ) >> ./drop_all_tables.sql
+    echo "SET FOREIGN_KEY_CHECKS = 1;" >> ./drop_all_tables.sql
+    mysql -u$DB_USERNAME -p$DB_PASSWORD $DB_NAME < ./drop_all_tables.sql
+    check_exit_code "mysql" $?
+    rm ./drop_all_tables.sql
+
+    # Restore dump
+    echo Restoring data...
+    mysqldump --single-transaction -u$DB_USERNAME_PROD -p$DB_PASSWORD_PROD $DB_NAME_PROD | mysql -u$DB_USERNAME -p$DB_PASSWORD $DB_NAME
+    check_exit_code "mysql" $?
+
+    echo Done.
+}
+
+show_usage()
+{
+    echo "Usage:"
+    echo "  dbutils [command]"
+    echo ""
+    echo "Available commands:"
+    echo "  backup       Exports the data to ./data/db.sql.gz"
+    echo "  restore      Imports the data from ./data/db.sql.gz"
+    echo "  restore-prod Copies the database from production"
+    echo "  license      Show the license information"
+}
+
+# Main entry point
+COMMAND=$1
+
+print_header
+
+case $COMMAND in
+    backup)
+        backup_db
+        ;;
+    restore)
+        restore_db
+        ;;
+    restore-prod)
+        restore_from_prod
+        ;;
+    license)
+        cat LICENSE
+        ;;
+    *)
+        show_usage
+        ;;
+esac
