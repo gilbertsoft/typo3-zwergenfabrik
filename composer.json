@@ -19,6 +19,7 @@
 		}
 	],
 	"require": {
+		"roave/security-advisories": "dev-master",
 		"typo3/minimal": "^8.7",
 		"helhum/typo3-console": "*",
 		"helhum/typo3-secure-web": "*",
