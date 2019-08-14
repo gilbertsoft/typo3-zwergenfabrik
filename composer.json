@@ -26,6 +26,8 @@
 		"gilbertsoft/gswarranty": "*",
 		"gilbertsoft/gscacheconfig": "*",
 		"gilbertsoft/gsprotectedconfig": "*",
+		"gilbertsoft/dbutils": "@dev",
+		"gilbertsoft/typo3utils": "@dev",
 		"gilbertsoft/sitepackage": "@dev"
 	},
 	"require-dev": {
@@ -74,9 +76,5 @@
 			"root-dir": "private",
 			"web-dir": "web"
 		}
-	},
-	"bin": [
-		"bin/dbutils",
-		"bin/typo3utils"
-	]
+	}
 }

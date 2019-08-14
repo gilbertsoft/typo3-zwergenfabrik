@@ -1,0 +1,18 @@
+{
+	"name": "gilbertsoft/dbutils",
+	"description": "Database utilities",
+	"type": "library",
+	"keywords": [
+	],
+	"license": "GPL-3.0-or-later",
+	"authors": [
+		{
+			"name": "Simon Gilli",
+			"email": "typo3@gilbertsoft.org",
+			"homepage": "https://gilbertsoft.com/typo3"
+		}
+	],
+	"bin": [
+		"dbutils"
+	]
+}
