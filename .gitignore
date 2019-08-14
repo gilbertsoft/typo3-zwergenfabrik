@@ -16,6 +16,8 @@
 /.my.cnf
 /.mysql_history
 /.cache/*
+/.config/*
+/.local/*
 
 # Files created by the OS
 .DS_Store
