@@ -61,12 +61,12 @@ backup_db()
         # Create dump
         echo Dumping data...
 
-        mysqldump --single-transaction -u$DB_USERNAME -p$DB_PASSWORD $DB_NAME | gzip >db.sql.gz
+        mysqldump --single-transaction -u$DB_USERNAME -p$DB_PASSWORD $DB_NAME | gzip >./data/db.sql.gz
         check_exit_code "mysqldump" $?
     fi
 
     # Copy to new file including date and time
-    cp db.sql.gz db-`date +%Y%m%d%H%M`.sql.gz
+    cp ./data/db.sql.gz ./data/db-`date +%Y%m%d%H%M`.sql.gz
     check_exit_code "cp" $?
 
     echo Done.
