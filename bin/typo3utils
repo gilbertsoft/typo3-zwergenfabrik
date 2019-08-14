@@ -1,0 +1,62 @@
+#!/usr/bin/env sh
+#    {one line to give the program's name and a brief idea of what it does.}
+#    Copyright (C) {year}  {name of author}
+#
+#    This program is free software: you can redistribute it and/or modify
+#    it under the terms of the GNU General Public License as published by
+#    the Free Software Foundation, either version 3 of the License, or
+#    (at your option) any later version.
+#
+#    This program is distributed in the hope that it will be useful,
+#    but WITHOUT ANY WARRANTY; without even the implied warranty of
+#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#    GNU General Public License for more details.
+#
+#    You should have received a copy of the GNU General Public License
+#    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+# typo3utils: TYPO3 utilities
+
+print_header()
+{
+    echo "typo3utils version 0.0.1  Copyright (C) 2019  Gilbertsoft"
+    echo ""
+    echo "This program comes with ABSOLUTELY NO WARRANTY."
+    echo "This is free software, and you are welcome to redistribute it"
+    echo "under certain conditions."
+    echo ""
+    echo "Type 'typo3utils license' for details."
+    echo ""
+}
+
+check_environment()
+{
+    # Check environment
+    test -z "$SITE_ENV" && test -z "$DDEV_PROJECT" && echo "Can not run in this environment" && exit 127
+}
+
+show_usage()
+{
+    echo "Usage:"
+    echo "  typo3utils [command]"
+    echo ""
+    echo "Available commands:"
+    echo "  check   Checks for a valid environment"
+    echo "  license Show the license information"
+}
+
+# Main entry point
+COMMAND=$1
+
+print_header
+
+case $COMMAND in
+    check)
+        check_environment
+        ;;
+    license)
+        cat LICENSE
+        ;;
+    *)
+        show_usage
+        ;;
+esac
