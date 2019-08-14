@@ -1,0 +1,3 @@
+Contact: https://gilbertsoft.com/security
+Contact: mailto:security@gilbertsoft.com
+Preferred-Languages: de, en, fr
