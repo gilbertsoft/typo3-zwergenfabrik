@@ -30,6 +30,8 @@ ehthumbs.db
 Thumbs.db
 
 # Project defaults
+/data/*
+!/data/.gitkeep
 /ext/*
 /private/*
 !/private/typo3conf/LocalConfiguration.php
