@@ -20,7 +20,6 @@
 	],
 	"require": {
 		"roave/security-advisories": "dev-master",
-		"typo3/minimal": "^8.7",
 		"helhum/typo3-console": "*",
 		"helhum/typo3-secure-web": "*",
 		"gilbertsoft/gswarranty": "*",
@@ -28,7 +27,8 @@
 		"gilbertsoft/gsprotectedconfig": "*",
 		"gilbertsoft/dbutils": "@dev",
 		"gilbertsoft/typo3utils": "@dev",
-		"gilbertsoft/sitepackage": "@dev"
+		"gilbertsoft/sitepackage": "@dev",
+		"typo3/minimal": "^8.7"
 	},
 	"require-dev": {
 	},
