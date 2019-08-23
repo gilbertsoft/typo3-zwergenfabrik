@@ -12,6 +12,16 @@
 			"homepage": "https://gilbertsoft.com/typo3"
 		}
 	],
+	"scripts": {
+		"db-backup": ["dbutils backup"],
+		"db-restore": ["dbutils restore"],
+		"db-restore-prod": ["dbutils restore-prod"]
+	},
+    "scripts-descriptions": {
+        "db-backup": "Backup database to ./data/",
+        "db-restore": "Restore database from ./data/",
+        "db-restore-prod": "Restore database from production"
+	},
 	"bin": [
 		"dbutils"
 	]
