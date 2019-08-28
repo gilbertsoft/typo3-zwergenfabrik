@@ -31,7 +31,6 @@ Thumbs.db
 
 # Project defaults
 /data/*
-!/data/.gitkeep
 /ext/*
 /private/*
 !/private/typo3conf
@@ -46,3 +45,6 @@ Thumbs.db
 !/web/robots.txt
 
 # Project specific
+
+# Global exceptions, keep at the eof
+!.gitkeep
