@@ -15,12 +15,14 @@
 	"scripts": {
 		"db-backup": ["gsutils db-backup"],
 		"db-restore": ["gsutils db-restore"],
-		"db-restore-prod": ["gsutils db-restore-prod"]
+		"db-restore-prod": ["gsutils db-restore-prod"],
+		"env-check": ["gsutils env-check"]
 	},
-    "scripts-descriptions": {
-        "db-backup": "Backup database to ./data/",
-        "db-restore": "Restore database from ./data/",
-        "db-restore-prod": "Restore database from production"
+	"scripts-descriptions": {
+		"db-backup": "Exports the database to ./data/db.sql.gz",
+		"db-restore": "Imports the database from ./data/db.sql.gz",
+		"db-restore-prod": "Imports the database from production",
+		"env-check": "Checks for a valid environment"
 	},
 	"bin": [
 		"gsutils"

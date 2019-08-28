@@ -122,15 +122,22 @@ restore_from_prod()
     echo Done.
 }
 
+check_environment()
+{
+    # Check environment
+    test -z "$SITE_ENV" && test -z "$DDEV_PROJECT" && echo "Can not run in this environment" && exit 127
+}
+
 show_usage()
 {
     echo "Usage:"
     echo "  gsutils [command]"
     echo ""
     echo "Available commands:"
-    echo "  db-backup       Exports the data to ./data/db.sql.gz"
-    echo "  db-restore      Imports the data from ./data/db.sql.gz"
-    echo "  db-restore-prod Copies the database from production"
+    echo "  db-backup       Exports the database to ./data/db.sql.gz"
+    echo "  db-restore      Imports the database from ./data/db.sql.gz"
+    echo "  db-restore-prod Imports the database from production"
+    echo "  env-check       Checks for a valid environment"
     echo "  license         Show the license information"
 }
 
@@ -148,6 +155,9 @@ case $COMMAND in
         ;;
     db-restore-prod)
         restore_from_prod
+        ;;
+    env-check)
+        check_environment
         ;;
     license)
         cat LICENSE
