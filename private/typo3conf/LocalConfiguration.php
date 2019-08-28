@@ -55,6 +55,9 @@ return [
         ],
     ],
     'EXTCONF' => [
+        'helhum-typo3-console' => [
+            'initialUpgradeDone' => '8.7',
+        ],
         'lang' => [
             'availableLanguages' => [
                 'de',
