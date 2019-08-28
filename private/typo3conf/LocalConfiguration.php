@@ -36,7 +36,6 @@ return [
             'gscacheconfig' => 'a:3:{s:19:"cachingConfigEnable";s:1:"1";s:25:"cachingOptimizationEnable";s:1:"1";s:31:"cachingCliFallbackExtbaseObject";s:1:"1";}',
             'gsfavicon' => 'a:0:{}',
             'gslib' => 'a:0:{}',
-            'gsprotectedconfig' => 'a:24:{s:17:"localConfigEnable";s:1:"1";s:18:"localIncludeEnable";s:1:"1";s:20:"localIncludeFileName";s:23:"../private/Settings.php";s:19:"contextConfigEnable";s:1:"1";s:20:"contextIncludeEnable";s:1:"0";s:18:"contextIncludePath";s:11:"../private/";s:21:"contextExtendSiteName";s:1:"3";s:21:"contextExtendDatabase";s:1:"0";s:14:"feConfigEnable";s:1:"0";s:15:"feIncludeEnable";s:1:"0";s:17:"feIncludeFileName";s:25:"../private/FeSettings.php";s:14:"beConfigEnable";s:1:"0";s:15:"beIncludeEnable";s:1:"0";s:17:"beIncludeFileName";s:25:"../private/BeSettings.php";s:15:"cliConfigEnable";s:1:"0";s:16:"cliIncludeEnable";s:1:"0";s:18:"cliIncludeFileName";s:26:"../private/CliSettings.php";s:15:"cliResetCaching";s:1:"0";s:16:"ajaxConfigEnable";s:1:"0";s:17:"ajaxIncludeEnable";s:1:"0";s:19:"ajaxIncludeFileName";s:27:"../private/AjaxSettings.php";s:19:"installConfigEnable";s:1:"0";s:20:"installIncludeEnable";s:1:"0";s:22:"installIncludeFileName";s:30:"../private/InstallSettings.php";}',
             'gswarranty' => 'a:0:{}',
             'introductionplus' => 'a:0:{}',
             'lowlevel' => 'a:0:{}',

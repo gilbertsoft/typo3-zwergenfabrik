@@ -12,7 +12,6 @@ $EM_CONF[$_EXTKEY] = [
             'typo3' => '8.7.0-8.99.99',
             'gswarranty' => '*',
             'gscacheconfig' => '*',
-            'gsprotectedconfig' => '*',
             'gsfavicon' => '*',
             'realurl' => '2.5.0-2.99.99',
             'bootstrap_package' => '10.0.0-10.99.99',

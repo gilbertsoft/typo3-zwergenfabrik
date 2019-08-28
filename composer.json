@@ -25,7 +25,6 @@
 		"helhum/typo3-secure-web": "*",
 		"gilbertsoft/gswarranty": "*",
 		"gilbertsoft/gscacheconfig": "*",
-		"gilbertsoft/gsprotectedconfig": "*",
 		"gilbertsoft/gsutils": "@dev",
 		"gilbertsoft/sitepackage": "@dev",
 		"typo3/minimal": "^8.7"
