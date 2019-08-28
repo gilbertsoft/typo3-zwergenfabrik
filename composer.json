@@ -45,7 +45,7 @@
 	},
 	"scripts": {
 		"typo3-cms-scripts": [
-			"typo3utils check",
+			"gsutils env-check",
 			"typo3cms install:fixfolderstructure",
 			"typo3cms install:generatepackagestates",
 			"typo3cms cache:flush --files-only",

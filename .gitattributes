@@ -29,3 +29,4 @@
 *.sql text eol=lf
 *.t3s text eol=lf
 *.txt text eol=lf
+/packages/gsutils/* text eol=lf
