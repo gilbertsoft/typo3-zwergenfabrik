@@ -25,3 +25,8 @@ if (getenv('DDEV_PROJECT') && (getenv('TYPO3_PATH_WEB') !== getenv('TYPO3_PATH_R
         require $DDEV_CONFIG;
     }
 }
+
+// Run configuration modifier for extension gscacheconfig - added on 2018-11-16T18:16:00+01:00 by Gilbertsoft\CacheConfig\Service\InstallService
+if (class_exists('Gilbertsoft\CacheConfig\Extension\Configurator')) {
+    \Gilbertsoft\CacheConfig\Extension\Configurator::additionalConfiguration('gscacheconfig');
+}
