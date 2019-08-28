@@ -126,6 +126,7 @@ check_environment()
 {
     # Check environment
     test -z "$SITE_ENV" && test -z "$DDEV_PROJECT" && echo "Can not run in this environment" && exit 127
+    exit 0;
 }
 
 show_usage()
