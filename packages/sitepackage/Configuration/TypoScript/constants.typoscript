@@ -75,7 +75,7 @@ page {
 ##################
 plugin {
     gsfavicon {
-        path = EXT:gszwergenfabrik/Resources/Public/Icons/
+        path = EXT:gszwergenfabrik/Resources/Public/Icons/Favicon/
     }
 
     bootstrap_package {
