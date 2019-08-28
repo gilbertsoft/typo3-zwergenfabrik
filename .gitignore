@@ -34,6 +34,8 @@ Thumbs.db
 !/data/.gitkeep
 /ext/*
 /private/*
+!/private/typo3conf
+/private/typo3conf/*
 !/private/typo3conf/LocalConfiguration.php
 !/private/typo3conf/AdditionalConfiguration.ddev.php
 !/private/typo3conf/RealurlConfiguration.php
