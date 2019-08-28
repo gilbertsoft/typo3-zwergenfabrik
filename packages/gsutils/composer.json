@@ -1,5 +1,5 @@
 {
-	"name": "gilbertsoft/dbutils",
+	"name": "gilbertsoft/gsutils",
 	"description": "Database utilities",
 	"type": "library",
 	"keywords": [
@@ -13,9 +13,9 @@
 		}
 	],
 	"scripts": {
-		"db-backup": ["dbutils backup"],
-		"db-restore": ["dbutils restore"],
-		"db-restore-prod": ["dbutils restore-prod"]
+		"db-backup": ["gsutils db-backup"],
+		"db-restore": ["gsutils db-restore"],
+		"db-restore-prod": ["gsutils db-restore-prod"]
 	},
     "scripts-descriptions": {
         "db-backup": "Backup database to ./data/",
@@ -23,6 +23,6 @@
         "db-restore-prod": "Restore database from production"
 	},
 	"bin": [
-		"dbutils"
+		"gsutils"
 	]
 }

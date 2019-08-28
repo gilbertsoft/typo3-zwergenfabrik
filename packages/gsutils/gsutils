@@ -14,17 +14,17 @@
 #
 #    You should have received a copy of the GNU General Public License
 #    along with this program.  If not, see <http://www.gnu.org/licenses/>.
-# dbutils: database utilities
+# gsutils: database utilities
 
 print_header()
 {
-    echo "dbutils version 0.0.1  Copyright (C) 2019  Gilbertsoft"
+    echo "gsutils version 0.0.1  Copyright (C) 2019  Gilbertsoft"
     echo ""
     echo "This program comes with ABSOLUTELY NO WARRANTY."
     echo "This is free software, and you are welcome to redistribute it"
     echo "under certain conditions."
     echo ""
-    echo "Type 'dbutils license' for details."
+    echo "Type 'gsutils license' for details."
     echo ""
 }
 
@@ -125,13 +125,13 @@ restore_from_prod()
 show_usage()
 {
     echo "Usage:"
-    echo "  dbutils [command]"
+    echo "  gsutils [command]"
     echo ""
     echo "Available commands:"
-    echo "  backup       Exports the data to ./data/db.sql.gz"
-    echo "  restore      Imports the data from ./data/db.sql.gz"
-    echo "  restore-prod Copies the database from production"
-    echo "  license      Show the license information"
+    echo "  db-backup       Exports the data to ./data/db.sql.gz"
+    echo "  db-restore      Imports the data from ./data/db.sql.gz"
+    echo "  db-restore-prod Copies the database from production"
+    echo "  license         Show the license information"
 }
 
 # Main entry point
@@ -140,13 +140,13 @@ COMMAND=$1
 print_header
 
 case $COMMAND in
-    backup)
+    db-backup)
         backup_db
         ;;
-    restore)
+    db-restore)
         restore_db
         ;;
-    restore-prod)
+    db-restore-prod)
         restore_from_prod
         ;;
     license)
