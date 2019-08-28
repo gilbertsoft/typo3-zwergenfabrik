@@ -13,13 +13,13 @@ mariadb_version: "10.1"
 nfs_mount_enabled: false
 provider: default
 hooks:
-  post-start:
-  - exec: cp private/typo3conf/AdditionalConfiguration.ddev.php private/typo3conf/AdditionalConfiguration.php
-  - exec: composer install --ignore-platform-reqs -d /var/www/html
-  - exec: npm --prefix private/typo3conf/ext/t3olayout/Build install
-  - exec: npm --prefix private/typo3conf/ext/t3olayout/Build run-script build
-  - exec: ./vendor/bin/typo3cms install:generatepackagestates
-  - exec: ./vendor/bin/typo3cms install:extensionsetupifpossible
+#  post-start:
+#  - exec: cp private/typo3conf/AdditionalConfiguration.ddev.php private/typo3conf/AdditionalConfiguration.php
+#  - exec: composer install --ignore-platform-reqs -d /var/www/html
+#  - exec: npm --prefix private/typo3conf/ext/t3olayout/Build install
+#  - exec: npm --prefix private/typo3conf/ext/t3olayout/Build run-script build
+#  - exec: ./vendor/bin/typo3cms install:generatepackagestates
+#  - exec: ./vendor/bin/typo3cms install:extensionsetupifpossible
 use_dns_when_possible: true
 timezone: ""
 
