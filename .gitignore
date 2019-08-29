@@ -41,10 +41,12 @@ Thumbs.db
 !/private/typo3conf/RealurlConfiguration.php
 /vendor/*
 /web/*
+!/web/banner.png
 !/web/browserconfig.xml
 !/web/humans.txt
 !/web/robots.txt
 !/web/security.txt
+!/web/unavailable.html
 
 # Project specific
 
