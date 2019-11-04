@@ -42,7 +42,6 @@
 		"aimeos/aimeos-typo3": "^19.4"
 	},
 	"replace": {
-		"gszwergenfabrik": "self.version",
 		"typo3-ter/gszwergenfabrik": "self.version"
 	},
 	"extra": {
