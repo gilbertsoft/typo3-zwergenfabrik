@@ -208,6 +208,6 @@ plugin.tx_aimeos.settings {
   }
 
 
-  client.html.catalog.detail.partials.image = catalog/detail/image-partial-bottom.php
+  client.html.catalog.detail.partials.image = catalog/detail/image-partial-bottom
 
 }
