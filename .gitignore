@@ -47,6 +47,7 @@ Thumbs.db
 !/web/robots.txt
 !/web/security.txt
 !/web/unavailable.html
+xdebug-log
 
 # Project specific
 
