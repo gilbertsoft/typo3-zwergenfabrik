@@ -29,4 +29,14 @@ call_user_func(function () {
     
     $GLOBALS['TYPO3_CONF_VARS']['EXTCONF']['aimeos']['confDirs']['1_' . $extensionKey] =
         'EXT:' . $extensionKey . '/Resources/Private/Config/';
+
+    /**
+     * Register Aimeos upgrade wizards
+     */
+    /*
+    $GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['ext/install']['update'][\Gilbertsoft\Zwergenfabrik\Updates\PrepareAimeos19Update::class]
+        = \Gilbertsoft\Zwergenfabrik\Updates\PrepareAimeos19Update::class;
+    */
+    $GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['ext/install']['update'][\Gilbertsoft\Zwergenfabrik\Updates\AimeosUpdate::class]
+        = \Gilbertsoft\Zwergenfabrik\Updates\AimeosUpdate::class;
 });
