@@ -49,6 +49,7 @@
 			"typo3cms install:generatepackagestates",
 			"typo3cms cache:flush --files-only",
 			"@aimeos-install",
+			"typo3cms database:updateschema '*.add,*.change'",
 			"typo3cms upgrade:all",
 			"typo3cms language:update",
 			"typo3cms cache:flush"
