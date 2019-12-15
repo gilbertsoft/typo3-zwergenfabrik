@@ -1,0 +1,27 @@
+#!/bin/bash
+
+## Description: Enable or disable xdebug in the web container
+## Usage: php-debug [flags] [args]
+## Example: "ddev php-debug" or "ddev php-debug off"
+
+if [ "$(echo $1 | tr '[:upper:]' '[:lower:]')" = "off" ]; then
+    disable_xdebug
+elif [ "$(echo $1 | tr '[:upper:]' '[:lower:]')" = "info" ]; then
+    php -i >${WEBSERVER_DOCROOT}/phpinfo
+elif [ "$(echo $1 | tr '[:upper:]' '[:lower:]')" = "update" ]; then
+    exit 1
+    disable_xdebug
+    cd /tmp
+    wget http://xdebug.org/files/xdebug-2.8.0.tgz
+    sudo apt-get update
+    sudo apt-get -y install php7.2-dev
+    tar -xvzf xdebug-2.8.0.tgz
+    cd xdebug-2.8.0
+    phpize
+    ./configure
+    make
+    sudo cp -f modules/xdebug.so /usr/lib/php/20170718
+    enable_xdebug
+else
+    enable_xdebug
+fi
