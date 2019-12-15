@@ -11,6 +11,8 @@
 #### PAGE ####
 ##############
 page {
+    #10.dataProcessing.10.dataProcessing.5 = Gilbertsoft\AimeosWidgets\DataProcessing\CategoryMenuProcessor    
+
     includeCSSLibs {
         #googlewebfont >
         #googlewebfont = https://fonts.googleapis.com/css?family=Love+Ya+Like+A+Sister|Open+Sans:400,700
