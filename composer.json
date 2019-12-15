@@ -48,16 +48,22 @@
 			"typo3cms install:fixfolderstructure",
 			"typo3cms install:generatepackagestates",
 			"typo3cms cache:flush --files-only",
+			"@aimeos-install",
 			"typo3cms upgrade:all",
 			"typo3cms language:update",
-			"typo3cms aimeos:setup",
 			"typo3cms cache:flush"
 		],
-		"aimeos-scripts": [
+		"aimeos-install": [
 			"Aimeos\\Aimeos\\Custom\\Composer::install"
 		],
+		"aimeos-setup": [
+			"typo3cms aimeos:setup"
+		],
+		"aimeos-index": [
+			"typo3cms scheduler:run --task 18 --force",
+			"typo3cms scheduler:run --task 19 --force"
+		],
 		"post-autoload-dump": [
-			"@aimeos-scripts",
 			"@typo3-cms-scripts"
 		]
 	},
