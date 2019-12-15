@@ -358,4 +358,9 @@ BIC: RAIFCH22XXX
     string = font-color2
     trans = Schriftfarbe 2
   }
+  158 {
+    domain = client
+    string = Suppliers
+    trans = Marken
+  }
 }
