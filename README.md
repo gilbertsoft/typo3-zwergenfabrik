@@ -45,6 +45,18 @@ php[used PHP version, e.g. 7.2] vendor/bin/typo3cms install:setup \
 
 ## User manual
 
+### Option or Variant
+
+One important decision is to choose the right product type. If a product is
+available in multiple models like various sizes or colors a selection
+with multiple articles has to be created. Else you are not able to manage
+stocks and the customer will be able to buy articles without defining the
+necessary attributes.
+
+By default there is no preselection of the variants but this can be changed in
+<https://github.com/gilbertsoft/typo3-zwergenfabrik/blob/master/packages/sitepackage/Configuration/TypoScript/Setup/Aimeos/client-html.typoscript>
+see `client.html.catalog.selection.preselect` at the end of the file.
+
 ### Adding new attributes
 
 * add a attribute in the Aimeos Admin and note the given key
