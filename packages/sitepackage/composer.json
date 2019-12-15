@@ -39,7 +39,7 @@
 		"dmitryd/typo3-realurl": "^2.5",
 		"sjbr/static-info-tables": "^6.7",
 		"clickstorm/go_maps_ext": "^2.6",
-		"aimeos/aimeos-typo3": "^19.4"
+		"aimeos/aimeos-typo3": "^19.10 || dev-master"
 	},
 	"replace": {
 		"typo3-ter/gszwergenfabrik": "self.version"
