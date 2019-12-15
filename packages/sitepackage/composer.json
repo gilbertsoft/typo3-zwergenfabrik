@@ -35,7 +35,7 @@
         "typo3/cms-wizard-crpages": "*",
         "typo3/cms-wizard-sortpages": "*",
 		"gilbertsoft/gsfavicon": "*",
-        "bk2k/bootstrap-package": "^10.0",
+        "bk2k/bootstrap-package": "^10.0 || 10.0.x-dev",
 		"dmitryd/typo3-realurl": "^2.5",
 		"sjbr/static-info-tables": "^6.7",
 		"clickstorm/go_maps_ext": "^2.6",
