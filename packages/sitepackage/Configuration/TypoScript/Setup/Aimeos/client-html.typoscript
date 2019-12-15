@@ -182,6 +182,7 @@ plugin.tx_aimeos.settings {
     #material = false
     #caption-option = false
     #remarks = false
+    #size = false
   }
 
   client.html.catalog.selection.type {
