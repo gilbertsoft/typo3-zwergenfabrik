@@ -1,0 +1,7 @@
+//
+// Navigation Style
+//
+#page-header.navbar-default {
+    @extend .navbar-light;
+    @extend .bg-secondary;
+}

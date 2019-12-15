@@ -130,6 +130,16 @@ plugin {
 #}
 
 
+################################
+### BOOTSTRAP SCSS CONSTANTS ###
+################################
+plugin.bootstrap_package.settings.scss {
+    primary = #00883E
+    secondary = #CCE5A2
+    #footer-sections = (content:(background: $body-bg, color: $body-color, link-color: $primary), meta:(background: #f6f6f6, color: #313131, link-color: $primary))
+}
+
+
 #######################################
 ### REMOVE BOOTSTRAP LESS CONSTANTS ###
 #######################################
@@ -150,24 +160,27 @@ plugin.tx_easygooglemap.configuration.centerMapLongitude = 8.3308869
 plugin.tx_easygooglemap.configuration.centerMapLatitude = 47.4663931
 plugin.tx_easygooglemap.includeJquery = 0
 
+########################
+### AIMEOS CONSTANTS ###
+########################
 module.tx_aimeos.common.content.baseurl = /uploads/tx_aimeos
-plugin.tx_aimeos.common.content.baseurl = /uploads/tx_aimeos
-plugin.tx_aimeos.theme.css.custom = fileadmin/themes/zf2016/shop.css
-plugin.tx_aimeos.theme.css.custom-common = fileadmin/themes/zf2016/common.css
-plugin.tx_aimeos.account.favorite.pid = 4
-plugin.tx_aimeos.account.watch.pid = 4
-plugin.tx_aimeos.basket.pid = 11
-plugin.tx_aimeos.catalog.detail.pid = 12
-plugin.tx_aimeos.catalog.lists.catid-default = 1
-plugin.tx_aimeos.catalog.filter.tree.levels-always = 2
-plugin.tx_aimeos.catalog.lists.pid = 13
-plugin.tx_aimeos.catalog.stock.pid = 6
-plugin.tx_aimeos.catalog.count.pid = 7
-plugin.tx_aimeos.catalog.suggest.pid = 8
-plugin.tx_aimeos.checkout.pid = 10
-plugin.tx_aimeos.checkout.confirm.pid = 9
-plugin.tx_aimeos.checkout.terms.pid = 3
-plugin.tx_aimeos.checkout.terms.privacy.pid = 40
-plugin.tx_aimeos.checkout.update.pid = 5
+plugin.tx_aimeos {
+    common.content.baseurl = /uploads/tx_aimeos
+    account.favorite.pid = 4
+    account.watch.pid = 4
+    basket.pid = 11
+    catalog.detail.pid = 12
+    catalog.lists.catid-default = 1
+    catalog.filter.tree.levels-always = 2
+    catalog.lists.pid = 1
+    catalog.stock.pid = 6
+    catalog.count.pid = 7
+    catalog.suggest.pid = 8
+    checkout.pid = 10
+    checkout.confirm.pid = 9
+    checkout.terms.pid = 3
+    checkout.terms.privacy.pid = 40
+    checkout.update.pid = 5
+}
 
 plugin.tx_gomapsext.settings.apiKey = AIzaSyAaqLwrDOPQ_pA6KEwSmP9RB_asFGfbxRU

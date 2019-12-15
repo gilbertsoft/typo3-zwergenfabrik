@@ -18,8 +18,12 @@ page {
     }
 
     includeCSS {
-        theme = EXT:gszwergenfabrik/Resources/Public/Less/theme.less
-        #aimeos = EXT:gszwergenfabrik/Resources/Public/Css/Aimeos/aimeos.css
+        # reset to ensure loading order
+        aimeos >
+        theme >
+        aimeos = EXT:gszwergenfabrik/Resources/Public/Css/Aimeos/aimeos.css
+        theme = EXT:gszwergenfabrik/Resources/Public/Scss/Theme/theme.scss
+        #theme = EXT:gszwergenfabrik/Resources/Public/Scss/Sketchy/theme.scss
         #aimeos-common = EXT:gszwergenfabrik/Resources/Public/Css/Aimeos/email.css
     }
 
@@ -52,11 +56,10 @@ config.locale_all = de_CH.UTF-8
 config.htmlTag_setParams = lang="de" dir="ltr" class="no-js"
 
 # Workaround for TYPO3 performance problem (https://forge.typo3.org/issues/75127)
-# Seems not to be a problem with 8.7
-#config.compressJs = 0
-#config.compressCss = 0
-#config.concatenateJs = 0
-#config.concatenateCss = 0
+config.compressJs = 0
+config.compressCss = 0
+config.concatenateJs = 0
+config.concatenateCss = 0
 
 # from aimeos_dist/Configuration/TypoScript/constants.txt
 config.typolinkLinkAccessRestrictedPages = 11

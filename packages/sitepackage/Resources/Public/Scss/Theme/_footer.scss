@@ -1,0 +1,58 @@
+//
+// Footer
+// --------------------------------------------------
+.footer-section {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+}
+.footer-section UL {
+	list-style: none;
+}
+.footer-section A {
+	display: block;
+	font-size: 80%;
+}
+.footer-section A:hover, .footer-section A:focus {
+	color: #FFFFFF;
+	text-decoration: underline;
+}
+
+
+//
+// Aimeos footer
+// --------------------------------------------------
+.footer-section .aimeos A:link, .footer-section .aimeos A:visited {
+	color: #FFFFFF;
+}
+.footer-section .aimeos H1, .footer-section .aimeos H2, .footer-section .aimeos H3, .footer-section .aimeos H4 {
+	color: #FFFFFF;
+}
+.footer-section .catalog-filter-tree .catcode-home > A:before {
+	content: "";
+}
+.footer-section .catalog-filter-tree {
+	margin: 0;
+}
+.footer-section .catalog-filter H2 {
+	display: none;
+}
+.footer-section .catalog-filter-tree UL {
+	padding-left: 2%;
+}
+.footer-section .catalog-filter-tree > UL {
+	padding: 0;
+	margin: 0 0 0 -10px;
+	display: block;
+}
+.footer-section .catalog-filter-tree > UL > LI {
+	padding: 0;
+}
+.footer-section .catalog-filter-tree A.cat-item {
+	padding: 0;
+}
+.footer-section .catalog-filter-tree .cat-name {
+	font-size: 100%;
+}
+.footer-section .catalog-filter-tree .cat-count {
+	display: none;
+}
