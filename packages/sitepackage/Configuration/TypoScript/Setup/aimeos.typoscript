@@ -1,5 +1,8 @@
 # Remove smoothscroll code in boostrap_package so changing images in detail view works
 page.includeJSFooterlibs.bootstrap_smoothscroll >
+page.includeJSFooterlibs.jquery-migrate = https://code.jquery.com/jquery-migrate-1.2.1.min.js
+page.includeJSFooterlibs.jquery-migrate.external = 1
+
 
 #plugin.tx_aimeos.settings.controller.common.media.standard {
 #  files {
