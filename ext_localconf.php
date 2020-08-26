@@ -1,8 +1,8 @@
 <?php
+
 defined('TYPO3_MODE') || die();
 
-call_user_func(function($extensionKey) 
-{
+call_user_func(function ($extensionKey) {
     /***************
      * Add default configuration
      */
@@ -14,7 +14,7 @@ call_user_func(function($extensionKey)
         '<INCLUDE_TYPOSCRIPT: source="FILE:EXT:' . $extensionKey . '/Configuration/UserTS/All.txt">'
     );
 
-    $GLOBALS['TYPO3_CONF_VARS']['RTE']['Presets'][$extensionKey] = 
+    $GLOBALS['TYPO3_CONF_VARS']['RTE']['Presets'][$extensionKey] =
         'EXT:' . $extensionKey . '/Configuration/RTE/Default.yaml';
 
     /***************
