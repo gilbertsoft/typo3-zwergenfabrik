@@ -18,7 +18,7 @@ styles.content.loginform.pid = 2
 page {
     logo {
         file = EXT:gszwergenfabrik/Resources/Public/Images/logo.png
-        fileInverted = 
+        fileInverted =
         height = 91
         width = 423
         alt = Logo Zwergenfabrik
@@ -41,10 +41,10 @@ page {
         description = Hier finden Sie Nuggiketten aus Holz und Silikon, Rasseli aus Holz und aus Silikon, Beissketten aus Silikon, Kinderwagenketten, Stillketten, Beisssterne aus Silikon, bedruckte Bodies, Lätzli und Neugeborenenmützen, bedruckte Trinkflaschen und Znüniböxli, bedruckte LED-Sterne, Schlüsselanhänger aus Holz und Silikon, Engeli als Schlüsselanhänger/Glücksbringer, Kinderkleidung wie Socken, Strumpfhosen, Unterwäsche, Finken, Pyjamas und Schals sowie Sonnengläser aus Südafrika
         keywords = Nuggiketten aus Holz und Silikon,Rasseli aus Holz und Silikon,Beissketten aus Holz und Silikon,Kinderwagenketten,Stillketten,Beisssterne aus Silikon,bedruckte Bodies,bedruckte Lätzli,bedruckte Neugeborenenmützen,bedruckte Trinkflaschen,bedruckte Znüniböxli,bedruckte LED-Sterne,Schlüsselanhänger aus Holz und Silikon,Engeli als Schlüsselanhänger/Glücksbringer,Kinderkleidung,Socken,Strumpfhosen,Unterwäsche,Finken,Pyjamas,Schals,Sonnengläser aus Südafrika
         google-site-verification = pxdmx_0qlhR5-nEGEjDjZC3fMdVztybcRoCOqHLg4gQ
-    }    
+    }
     theme {
         copyright.enable = 1
-        copyright.text = Copyright © 2016-###CURRENTYEAR### Zwergenfabrik Rahel Spörri. Alle Rechte vorbehalten.
+        copyright.text = Copyright © 2016-###CURRENTYEAR### Zwergenfabrik Gmbh. Alle Rechte vorbehalten.
         breadcrumb = 0
         navigationtype = top
         navigationstyle = default
