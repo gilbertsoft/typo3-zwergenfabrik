@@ -1,0 +1,80 @@
+##########################
+#### BASE DEFINITIONS ####
+##########################
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:gszwergenfabrik/Configuration/TypoScript/_Base/constants.typoscript">
+
+
+##############
+### CONFIG ###
+##############
+config.headerComment = Powered by Gilbertsoft - https://gilbertsoft.com
+styles.content.loginform.pid = 2
+
+
+############
+### PAGE ###
+############
+page {
+    meta {
+        description = Hier finden Sie Nuggiketten aus Holz und Silikon, Rasseli aus Holz und aus Silikon, Beissketten aus Silikon, Kinderwagenketten, Stillketten, Beisssterne aus Silikon, bedruckte Bodies, Lätzli und Neugeborenenmützen, bedruckte Trinkflaschen und Znüniböxli, bedruckte LED-Sterne, Schlüsselanhänger aus Holz und Silikon, Engeli als Schlüsselanhänger/Glücksbringer, Kinderkleidung wie Socken, Strumpfhosen, Unterwäsche, Finken, Pyjamas und Schals sowie Sonnengläser aus Südafrika
+        keywords = Nuggiketten aus Holz und Silikon,Rasseli aus Holz und Silikon,Beissketten aus Holz und Silikon,Kinderwagenketten,Stillketten,Beisssterne aus Silikon,bedruckte Bodies,bedruckte Lätzli,bedruckte Neugeborenenmützen,bedruckte Trinkflaschen,bedruckte Znüniböxli,bedruckte LED-Sterne,Schlüsselanhänger aus Holz und Silikon,Engeli als Schlüsselanhänger/Glücksbringer,Kinderkleidung,Socken,Strumpfhosen,Unterwäsche,Finken,Pyjamas,Schals,Sonnengläser aus Südafrika
+        google-site-verification = pxdmx_0qlhR5-nEGEjDjZC3fMdVztybcRoCOqHLg4gQ
+    }
+    theme {
+        meta.navigationValue = 3,64,40
+    }
+    tracking {
+        google {
+            trackingID = UA-131580038-1
+        }
+    }
+}
+
+
+##################
+### EXTENSIONS ###
+##################
+module.tx_aimeos.common.content.baseurl = /uploads/tx_aimeos
+plugin {
+    tx_felogin_pi1.storagePid = 2
+
+    tx_aimeos {
+        common.content.baseurl = /uploads/tx_aimeos
+        account.favorite.pid = 4
+        account.watch.pid = 4
+        basket.pid = 11
+        catalog.detail.pid = 12
+        catalog.lists.catid-default = 1
+        catalog.filter.tree.levels-always = 2
+        catalog.lists.pid = 13
+        catalog.stock.pid = 6
+        catalog.count.pid = 7
+        catalog.suggest.pid = 8
+        checkout.pid = 10
+        checkout.confirm.pid = 9
+        checkout.terms.pid = 3
+        checkout.terms.privacy.pid = 40
+        checkout.update.pid = 5
+    }
+}
+
+
+########################
+### CONTENT ELEMENTS ###
+########################
+#plugin.bootstrap_package_contentelements {
+#    view {
+#        layoutRootPath = EXT:gszwergenfabrik/Resources/Private/Layouts/ContentElements/
+#        partialRootPath = EXT:gszwergenfabrik/Resources/Private/Partials/ContentElements/
+#        templateRootPath = EXT:gszwergenfabrik/Resources/Private/Templates/ContentElements/
+#    }
+#}
+
+
+#######################################
+### REMOVE BOOTSTRAP LESS CONSTANTS ###
+#######################################
+#plugin.bootstrap_package.settings.less >
+plugin.bootstrap_package.settings.less.google-webfont >
+plugin.bootstrap_package.settings.less.google-webfont-weight >
+#plugin.bootstrap_package.settings.overrideLessVariables >

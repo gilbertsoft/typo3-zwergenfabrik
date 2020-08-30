@@ -1,0 +1,80 @@
+##########################
+#### BASE DEFINITIONS ####
+##########################
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:gszwergenfabrik/Configuration/TypoScript/_Base/constants.typoscript">
+
+
+##############
+### CONFIG ###
+##############
+config.headerComment = Powered by Gilbertsoft - https://gilbertsoft.com
+styles.content.loginform.pid = 2
+
+
+############
+### PAGE ###
+############
+page {
+    meta {
+        description = Als schweizer Vertretung der Marken Miss Nella und Blade and Rose bieten wir Ihnen sehr hochwertige Produkte an, welche seit Jahren ein Must-Have in der Kinderbranche darstellen. Das Sortiment wird laufend erweitert, um Ihnen noch weitere Marken zu lukrativen Preisen zur Verfügung zu stellen.
+        keywords = Miss Nella, Blade and Rose
+        google-site-verification = pxdmx_0qlhR5-nEGEjDjZC3fMdVztybcRoCOqHLg4gQ
+    }
+    theme {
+        meta.navigationValue = 3,64,40
+    }
+    tracking {
+        google {
+            trackingID = UA-131580038-1
+        }
+    }
+}
+
+
+##################
+### EXTENSIONS ###
+##################
+module.tx_aimeos.common.content.baseurl = /uploads/tx_aimeos
+plugin {
+    tx_felogin_pi1.storagePid = 2
+
+    tx_aimeos {
+        common.content.baseurl = /uploads/tx_aimeos
+        account.favorite.pid = 78
+        account.watch.pid = 78
+        basket.pid = 86
+        catalog.detail.pid = 87
+        catalog.lists.catid-default = 1
+        catalog.filter.tree.levels-always = 2
+        catalog.lists.pid = 74
+        catalog.stock.pid = 81
+        catalog.count.pid = 82
+        catalog.suggest.pid = 83
+        checkout.pid = 85
+        checkout.confirm.pid = 84
+        checkout.terms.pid = 3
+        checkout.terms.privacy.pid = 40
+        checkout.update.pid = 80
+    }
+}
+
+
+########################
+### CONTENT ELEMENTS ###
+########################
+#plugin.bootstrap_package_contentelements {
+#    view {
+#        layoutRootPath = EXT:gszwergenfabrik/Resources/Private/Layouts/ContentElements/
+#        partialRootPath = EXT:gszwergenfabrik/Resources/Private/Partials/ContentElements/
+#        templateRootPath = EXT:gszwergenfabrik/Resources/Private/Templates/ContentElements/
+#    }
+#}
+
+
+#######################################
+### REMOVE BOOTSTRAP LESS CONSTANTS ###
+#######################################
+#plugin.bootstrap_package.settings.less >
+plugin.bootstrap_package.settings.less.google-webfont >
+plugin.bootstrap_package.settings.less.google-webfont-weight >
+#plugin.bootstrap_package.settings.overrideLessVariables >

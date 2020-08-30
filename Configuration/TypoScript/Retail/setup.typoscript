@@ -1,0 +1,11 @@
+##########################
+#### BASE DEFINITIONS ####
+##########################
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:gszwergenfabrik/Configuration/TypoScript/_Base/setup.typoscript">
+
+
+##############
+#### PAGE ####
+##############
+page {
+}
