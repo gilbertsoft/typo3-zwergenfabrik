@@ -6,18 +6,18 @@
 	"homepage": "https://gilbertsoft.com",
 	"license": "GPL-3.0-or-later",
 	"require": {
-		"typo3/cms-core": "^8.7",
-		"gilbertsoft/gswarranty": "*",
-		"gilbertsoft/gscacheconfig": "*",
-		"gilbertsoft/gsprotectedconfig": "*",
-		"gilbertsoft/gsfavicon": "^3.0.0",
-		"dmitryd/typo3-realurl": "^2.3.1",
+		"aimeos/aimeos-typo3": "^18.4 || 2018.10.x-dev",
 		"bk2k/bootstrap-package": "^9.1.0",
-		"typo3-ter/easy-googlemap": "^2.0.0",
-		"aimeos/aimeos-typo3": "^18.4 || 2018.10.x-dev"
+		"gilbertsoft/gsfavicon": "^3.0.0",
+		"typo3/cms-core": "^8.7"
 	},
 	"replace": {
-		"gszwergenfabrik": "self.version",
+		"gilbertsoft/gszwergenfabrik": "self.version",
 		"typo3-ter/gszwergenfabrik": "self.version"
+	},
+	"extra": {
+		"typo3/cms": {
+			"extension-key": "gszwergenfabrik"
+		}
 	}
 }
