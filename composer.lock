@@ -536,8 +536,8 @@
             "authors": [
                 {
                     "name": "Matthias Sommerfeld",
-                    "role": "Developer",
-                    "email": "mso@phlylabs.de"
+                    "email": "mso@phlylabs.de",
+                    "role": "Developer"
                 }
             ],
             "description": "A library for encoding and decoding internationalized domain names",
@@ -666,9 +666,9 @@
             "authors": [
                 {
                     "name": "Marc Hirdes",
-                    "role": "Developer",
                     "email": "hirdes@clickstorm.de",
-                    "homepage": "http://www.clickstorm.de"
+                    "homepage": "http://www.clickstorm.de",
+                    "role": "Developer"
                 }
             ],
             "description": "Google Maps Extension. Simply insert a google map Version 3 inc. jQuery, calculate a route, images for markers, style maps, KML, categories, responsive and many more.",
@@ -1549,7 +1549,7 @@
             "dist": {
                 "type": "path",
                 "url": "packages/gsutils",
-                "reference": "a33b5e2bf679cf64329069251c61e5006811f6b3"
+                "reference": "9049b16a37d0be799d31cd6f9f312dd045e5694e"
             },
             "bin": [
                 "gsutils"
@@ -1579,7 +1579,10 @@
                     "homepage": "https://gilbertsoft.com/typo3"
                 }
             ],
-            "description": "Database utilities"
+            "description": "Database utilities",
+            "transport-options": {
+                "relative": true
+            }
         },
         {
             "name": "gilbertsoft/gswarranty",
@@ -1635,7 +1638,7 @@
             "dist": {
                 "type": "path",
                 "url": "packages/sitepackage",
-                "reference": "0e0db2971e204d379838beb5dca592e64972e771"
+                "reference": "0b7c0f6c54c0d60eb31733f3d73aff6e5d2f2fcd"
             },
             "require": {
                 "aimeos/aimeos-typo3": "^19.10 || dev-master",
@@ -1694,7 +1697,10 @@
             "homepage": "https://gilbertsoft.com",
             "keywords": [
                 "TYPO3 CMS"
-            ]
+            ],
+            "transport-options": {
+                "relative": true
+            }
         },
         {
             "name": "gilbertsoft/typo3-gslib",
@@ -1750,9 +1756,9 @@
             "authors": [
                 {
                     "name": "Simon Gilli",
-                    "role": "Developer",
                     "email": "typo3@gilbertsoft.org",
-                    "homepage": "http://gilbertsoft.org"
+                    "homepage": "http://gilbertsoft.org",
+                    "role": "Developer"
                 }
             ],
             "description": "GS Library is a collection of utility functions, base classes and other templates for the usage in other extensions.",
@@ -2300,9 +2306,9 @@
             "authors": [
                 {
                     "name": "Helmut Hummel",
-                    "role": "Developer",
                     "email": "info@helhum.io",
-                    "homepage": "https://helhum.io"
+                    "homepage": "https://helhum.io",
+                    "role": "Developer"
                 }
             ],
             "description": "Set up secure TYPO3 web directory containing only public assets",
@@ -5708,13 +5714,13 @@
             "authors": [
                 {
                     "name": "The TYPO3 Community",
-                    "role": "Contributor",
-                    "homepage": "https://typo3.org/community/"
+                    "homepage": "https://typo3.org/community/",
+                    "role": "Contributor"
                 },
                 {
                     "name": "TYPO3 CMS Core Team",
-                    "role": "Developer",
-                    "homepage": "https://forge.typo3.org/projects/typo3cms-core"
+                    "homepage": "https://forge.typo3.org/projects/typo3cms-core",
+                    "role": "Developer"
                 }
             ],
             "description": "Minimal required set of TYPO3 extensions",
@@ -5772,16 +5778,16 @@
         },
         {
             "name": "typo3fluid/fluid",
-            "version": "2.6.8",
+            "version": "2.6.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TYPO3/Fluid.git",
-                "reference": "854c3b682aa4d2899f4246276cc60ad52cd8e34e"
+                "reference": "f20db4e74cf9803c6cffca2ed2f03e1b0b89d0dc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TYPO3/Fluid/zipball/854c3b682aa4d2899f4246276cc60ad52cd8e34e",
-                "reference": "854c3b682aa4d2899f4246276cc60ad52cd8e34e",
+                "url": "https://api.github.com/repos/TYPO3/Fluid/zipball/f20db4e74cf9803c6cffca2ed2f03e1b0b89d0dc",
+                "reference": "f20db4e74cf9803c6cffca2ed2f03e1b0b89d0dc",
                 "shasum": ""
             },
             "require": {
@@ -5807,7 +5813,7 @@
                 "LGPL-3.0-or-later"
             ],
             "description": "The TYPO3 Fluid template rendering engine",
-            "time": "2019-12-02T06:33:10+00:00"
+            "time": "2020-11-16T21:38:14+00:00"
         },
         {
             "name": "zendframework/zend-diactoros",
@@ -5869,6 +5875,7 @@
                 "psr",
                 "psr-7"
             ],
+            "abandoned": "laminas/laminas-diactoros",
             "time": "2019-08-06T17:53:53+00:00"
         }
     ],
@@ -5886,5 +5893,6 @@
     "platform-dev": [],
     "platform-overrides": {
         "php": "7.2.25"
-    }
+    },
+    "plugin-api-version": "1.1.0"
 }
