@@ -296,7 +296,7 @@ BIC: RAIFCH22XXX
   147 {
     domain = client/code
     string = mullwindel
-    trans = Nuschi
+    trans = Lätzli
   }
   1047 {
     domain = client/code
@@ -306,7 +306,7 @@ BIC: RAIFCH22XXX
   148 {
     domain = client/code
     string = mullwindel-option
-    trans = Nuschi
+    trans = Passendes Lätzli als Option
   }
   149 {
     domain = client/code
